@@ -1,0 +1,1259 @@
+{
+    "log": {
+        "disabled": false,
+        "level": "warn",
+        "timestamp": true
+    },
+    "dns": {
+        "servers": [
+            {
+                "type": "https",
+                "server": "8.8.8.8",
+                "detour": "✅ Selector",
+                "tag": "dns-remote"
+            },
+            {
+                "type": "udp",
+                "server": "8.8.8.8",
+                "tag": "dns-direct"
+            }
+        ],
+        "rules": [
+            {
+                "clash_mode": "Direct",
+                "server": "dns-direct"
+            },
+            {
+                "clash_mode": "Global",
+                "server": "dns-remote"
+            },
+            {
+                "rule_set": [
+                    "geosite-category-ads-all",
+                    "geosite-nsfw"
+                ],
+                "action": "reject"
+            },
+            {
+                "type": "logical",
+                "mode": "and",
+                "rules": [
+                    {
+                        "rule_set": [
+                            "geosite-ir"
+                        ]
+                    },
+                    {
+                        "rule_set": "geoip-ir"
+                    }
+                ],
+                "action": "route",
+                "server": "dns-direct"
+            }
+        ],
+        "strategy": "prefer_ipv4",
+        "independent_cache": true
+    },
+    "inbounds": [
+        {
+            "type": "tun",
+            "tag": "tun-in",
+            "address": [
+                "172.19.0.1/28"
+            ],
+            "mtu": 9000,
+            "auto_route": true,
+            "strict_route": true,
+            "stack": "mixed"
+        },
+        {
+            "type": "mixed",
+            "tag": "mixed-in",
+            "listen": "127.0.0.1",
+            "listen_port": 2080
+        }
+    ],
+    "outbounds": [
+        {
+            "tag": "💦 1 - VLESS - Domain : 2086",
+            "type": "vless",
+            "server": "long-tree-005e.jasmine2007.workers.dev",
+            "server_port": 2086,
+            "tcp_fast_open": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet_encoding": "",
+            "network": "tcp",
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoibjRwY1I3WXNaelZoZDdIIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 2 - VLESS - Domain : 2086",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 2086,
+            "tcp_fast_open": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet_encoding": "",
+            "network": "tcp",
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoiVXZPMUoxSGoiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 3 - VLESS - IPv4 : 2086",
+            "type": "vless",
+            "server": "172.67.194.6",
+            "server_port": 2086,
+            "tcp_fast_open": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet_encoding": "",
+            "network": "tcp",
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoiaTFPazR0ZDY5bkg3cSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 4 - VLESS - IPv4 : 2086",
+            "type": "vless",
+            "server": "104.21.12.93",
+            "server_port": 2086,
+            "tcp_fast_open": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet_encoding": "",
+            "network": "tcp",
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoiSHRQZDJRN0JoZ2wwcCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 5 - VLESS - IPv6 : 2086",
+            "type": "vless",
+            "server": "[2606:4700:3037::ac43:c206]",
+            "server_port": 2086,
+            "tcp_fast_open": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet_encoding": "",
+            "network": "tcp",
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoiRk5oTGNRdFpFa1hpIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 6 - VLESS - IPv6 : 2086",
+            "type": "vless",
+            "server": "[2606:4700:3034::6815:c5d]",
+            "server_port": 2086,
+            "tcp_fast_open": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet_encoding": "",
+            "network": "tcp",
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoiZWdCSWJNYkwybEJ6SiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 7 - VLESS - Domain : 443",
+            "type": "vless",
+            "server": "long-tree-005e.jasmine2007.workers.dev",
+            "server_port": 443,
+            "tcp_fast_open": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet_encoding": "",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "LONg-TREe-005e.JaSMINE2007.workERs.DEv",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/1.1"
+                ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoiSUk3NjEwdjUiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 8 - VLESS - Domain : 443",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 443,
+            "tcp_fast_open": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet_encoding": "",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "LonG-treE-005e.JASMine2007.WORKerS.Dev",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/1.1"
+                ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoiZHo3TnZ3SkFNNGMiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 9 - VLESS - IPv4 : 443",
+            "type": "vless",
+            "server": "172.67.194.6",
+            "server_port": 443,
+            "tcp_fast_open": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet_encoding": "",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "LoNg-TReE-005e.JASMIne2007.wORkeRS.deV",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/1.1"
+                ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoiWmYzODVIWmEwMDFvbzYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 10 - VLESS - IPv4 : 443",
+            "type": "vless",
+            "server": "104.21.12.93",
+            "server_port": 443,
+            "tcp_fast_open": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet_encoding": "",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "LOnG-treE-005E.JAsMINE2007.WorKErs.dev",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/1.1"
+                ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoidXZRVHlvUUdSIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 11 - VLESS - IPv6 : 443",
+            "type": "vless",
+            "server": "[2606:4700:3037::ac43:c206]",
+            "server_port": 443,
+            "tcp_fast_open": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet_encoding": "",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "lOng-tREe-005E.JasmINe2007.wORKERs.deV",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/1.1"
+                ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoibWFVNXVRZ1hJNiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 12 - VLESS - IPv6 : 443",
+            "type": "vless",
+            "server": "[2606:4700:3034::6815:c5d]",
+            "server_port": 443,
+            "tcp_fast_open": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet_encoding": "",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "LOng-TrEe-005e.jaSMInE2007.WorkErs.dev",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/1.1"
+                ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoiZjh6R3hJdjVDQUV4WEhUdSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 13 - VLESS - Domain : 2096",
+            "type": "vless",
+            "server": "long-tree-005e.jasmine2007.workers.dev",
+            "server_port": 2096,
+            "tcp_fast_open": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet_encoding": "",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "LONG-TReE-005e.JaSmine2007.WOrKErS.dEv",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/1.1"
+                ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoiSVdkZnRtSFhwcTBKRU40IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 14 - VLESS - Domain : 2096",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 2096,
+            "tcp_fast_open": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet_encoding": "",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "loNg-TrEe-005E.jASmiNe2007.woRKers.DeV",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/1.1"
+                ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoiaXhnUXRMSmJYNE5SV1NYIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 15 - VLESS - IPv4 : 2096",
+            "type": "vless",
+            "server": "172.67.194.6",
+            "server_port": 2096,
+            "tcp_fast_open": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet_encoding": "",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "Long-tRee-005E.jAsMine2007.wORkErs.dEV",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/1.1"
+                ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoiRGJNNWZlTXQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 16 - VLESS - IPv4 : 2096",
+            "type": "vless",
+            "server": "104.21.12.93",
+            "server_port": 2096,
+            "tcp_fast_open": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet_encoding": "",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "long-TREe-005e.jaSMine2007.wOrKErS.DEV",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/1.1"
+                ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoiYVR1UDh1VzZ5dHFKMSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 17 - VLESS - IPv6 : 2096",
+            "type": "vless",
+            "server": "[2606:4700:3037::ac43:c206]",
+            "server_port": 2096,
+            "tcp_fast_open": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet_encoding": "",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "lOng-Tree-005e.jasMiNe2007.WoRkERS.dEv",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/1.1"
+                ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoiQ3BEUXZJTjNtb29XTjkiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 18 - VLESS - IPv6 : 2096",
+            "type": "vless",
+            "server": "[2606:4700:3034::6815:c5d]",
+            "server_port": 2096,
+            "tcp_fast_open": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet_encoding": "",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "loNG-TRee-005E.JaSMinE2007.WOrkERs.dEv",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/1.1"
+                ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoiMVZPTmgxNERaajFzUiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 1 - Trojan - Domain : 2086",
+            "type": "trojan",
+            "server": "long-tree-005e.jasmine2007.workers.dev",
+            "server_port": 2086,
+            "tcp_fast_open": false,
+            "password": "Tu!!H<2_D1Y37Xr(",
+            "network": "tcp",
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoiUUNXbnVvSHAyT2NJc2I2eSIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 2 - Trojan - Domain : 2086",
+            "type": "trojan",
+            "server": "www.speedtest.net",
+            "server_port": 2086,
+            "tcp_fast_open": false,
+            "password": "Tu!!H<2_D1Y37Xr(",
+            "network": "tcp",
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoidk9laWlVbDQxdmtwIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 3 - Trojan - IPv4 : 2086",
+            "type": "trojan",
+            "server": "172.67.194.6",
+            "server_port": 2086,
+            "tcp_fast_open": false,
+            "password": "Tu!!H<2_D1Y37Xr(",
+            "network": "tcp",
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoiNUJEYTdjTmIiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 4 - Trojan - IPv4 : 2086",
+            "type": "trojan",
+            "server": "104.21.12.93",
+            "server_port": 2086,
+            "tcp_fast_open": false,
+            "password": "Tu!!H<2_D1Y37Xr(",
+            "network": "tcp",
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoicUlrTWNQNzgyUiIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 5 - Trojan - IPv6 : 2086",
+            "type": "trojan",
+            "server": "[2606:4700:3037::ac43:c206]",
+            "server_port": 2086,
+            "tcp_fast_open": false,
+            "password": "Tu!!H<2_D1Y37Xr(",
+            "network": "tcp",
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoiZG44Z09UUDdCT09RbyIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 6 - Trojan - IPv6 : 2086",
+            "type": "trojan",
+            "server": "[2606:4700:3034::6815:c5d]",
+            "server_port": 2086,
+            "tcp_fast_open": false,
+            "password": "Tu!!H<2_D1Y37Xr(",
+            "network": "tcp",
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoiOU5xTzZmdlBnd1lLa3oiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 7 - Trojan - Domain : 443",
+            "type": "trojan",
+            "server": "long-tree-005e.jasmine2007.workers.dev",
+            "server_port": 443,
+            "tcp_fast_open": false,
+            "password": "Tu!!H<2_D1Y37Xr(",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "LOng-trEe-005e.JaSMINE2007.WorKErs.DEv",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/1.1"
+                ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoicG1GY2NVR3JkN0kiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 8 - Trojan - Domain : 443",
+            "type": "trojan",
+            "server": "www.speedtest.net",
+            "server_port": 443,
+            "tcp_fast_open": false,
+            "password": "Tu!!H<2_D1Y37Xr(",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "loNG-trEE-005E.JASMIne2007.WOrkers.deV",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/1.1"
+                ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoid2hVeTRtY0NKaDBobCIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 9 - Trojan - IPv4 : 443",
+            "type": "trojan",
+            "server": "172.67.194.6",
+            "server_port": 443,
+            "tcp_fast_open": false,
+            "password": "Tu!!H<2_D1Y37Xr(",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "LONG-Tree-005e.jasMIne2007.woRkErs.dev",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/1.1"
+                ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoiTGpkQTc5VHJEVSIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 10 - Trojan - IPv4 : 443",
+            "type": "trojan",
+            "server": "104.21.12.93",
+            "server_port": 443,
+            "tcp_fast_open": false,
+            "password": "Tu!!H<2_D1Y37Xr(",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "lONg-tRee-005E.jasMInE2007.woRkErs.DeV",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/1.1"
+                ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoiSU43eTNRRFZqSyIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 11 - Trojan - IPv6 : 443",
+            "type": "trojan",
+            "server": "[2606:4700:3037::ac43:c206]",
+            "server_port": 443,
+            "tcp_fast_open": false,
+            "password": "Tu!!H<2_D1Y37Xr(",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "LONg-TrEe-005e.JaSMIne2007.workerS.dEv",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/1.1"
+                ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoiclhuYWlnTmdRalBZY2dIdyIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 12 - Trojan - IPv6 : 443",
+            "type": "trojan",
+            "server": "[2606:4700:3034::6815:c5d]",
+            "server_port": 443,
+            "tcp_fast_open": false,
+            "password": "Tu!!H<2_D1Y37Xr(",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "LONg-TrEE-005e.jASMINe2007.WOrkerS.deV",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/1.1"
+                ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoidDd2MW5GdmNVUzJTcUtlTiIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 13 - Trojan - Domain : 2096",
+            "type": "trojan",
+            "server": "long-tree-005e.jasmine2007.workers.dev",
+            "server_port": 2096,
+            "tcp_fast_open": false,
+            "password": "Tu!!H<2_D1Y37Xr(",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "lOnG-trEe-005E.JAsmiNe2007.woRkERS.dEv",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/1.1"
+                ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoiY3dhMmtvWUg5Mm5mSkxQNyIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 14 - Trojan - Domain : 2096",
+            "type": "trojan",
+            "server": "www.speedtest.net",
+            "server_port": 2096,
+            "tcp_fast_open": false,
+            "password": "Tu!!H<2_D1Y37Xr(",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "LONG-tree-005E.JASMINE2007.worKeRS.DEV",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/1.1"
+                ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoiUE9ucG90T3NHeTBSQSIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 15 - Trojan - IPv4 : 2096",
+            "type": "trojan",
+            "server": "172.67.194.6",
+            "server_port": 2096,
+            "tcp_fast_open": false,
+            "password": "Tu!!H<2_D1Y37Xr(",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "LoNg-tree-005e.JAsMiNe2007.WorkeRs.deV",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/1.1"
+                ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoibFhIZ0lBcFZKelBRdWtVciIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 16 - Trojan - IPv4 : 2096",
+            "type": "trojan",
+            "server": "104.21.12.93",
+            "server_port": 2096,
+            "tcp_fast_open": false,
+            "password": "Tu!!H<2_D1Y37Xr(",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "long-TrEe-005e.JASmIne2007.WORKerS.deV",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/1.1"
+                ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoiczRuUXJxY0M5UHFjIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 17 - Trojan - IPv6 : 2096",
+            "type": "trojan",
+            "server": "[2606:4700:3037::ac43:c206]",
+            "server_port": 2096,
+            "tcp_fast_open": false,
+            "password": "Tu!!H<2_D1Y37Xr(",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "LonG-treE-005e.JasMInE2007.wORkeRs.dev",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/1.1"
+                ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoiSlFTeEc3NVkiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "💦 18 - Trojan - IPv6 : 2096",
+            "type": "trojan",
+            "server": "[2606:4700:3034::6815:c5d]",
+            "server_port": 2096,
+            "tcp_fast_open": false,
+            "password": "Tu!!H<2_D1Y37Xr(",
+            "network": "tcp",
+            "tls": {
+                "enabled": true,
+                "server_name": "LonG-TrEE-005e.jasMInE2007.WorkeRs.deV",
+                "record_fragment": false,
+                "insecure": false,
+                "alpn": [
+                    "http/1.1"
+                ],
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "/eyJqdW5rIjoiU3BZOENZY0w4WCIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+                "max_early_data": 2560,
+                "early_data_header_name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "type": "selector",
+            "tag": "✅ Selector",
+            "outbounds": [
+                "💦 Best Ping 🚀",
+                "💦 1 - VLESS - Domain : 2086",
+                "💦 2 - VLESS - Domain : 2086",
+                "💦 3 - VLESS - IPv4 : 2086",
+                "💦 4 - VLESS - IPv4 : 2086",
+                "💦 5 - VLESS - IPv6 : 2086",
+                "💦 6 - VLESS - IPv6 : 2086",
+                "💦 7 - VLESS - Domain : 443",
+                "💦 8 - VLESS - Domain : 443",
+                "💦 9 - VLESS - IPv4 : 443",
+                "💦 10 - VLESS - IPv4 : 443",
+                "💦 11 - VLESS - IPv6 : 443",
+                "💦 12 - VLESS - IPv6 : 443",
+                "💦 13 - VLESS - Domain : 2096",
+                "💦 14 - VLESS - Domain : 2096",
+                "💦 15 - VLESS - IPv4 : 2096",
+                "💦 16 - VLESS - IPv4 : 2096",
+                "💦 17 - VLESS - IPv6 : 2096",
+                "💦 18 - VLESS - IPv6 : 2096",
+                "💦 1 - Trojan - Domain : 2086",
+                "💦 2 - Trojan - Domain : 2086",
+                "💦 3 - Trojan - IPv4 : 2086",
+                "💦 4 - Trojan - IPv4 : 2086",
+                "💦 5 - Trojan - IPv6 : 2086",
+                "💦 6 - Trojan - IPv6 : 2086",
+                "💦 7 - Trojan - Domain : 443",
+                "💦 8 - Trojan - Domain : 443",
+                "💦 9 - Trojan - IPv4 : 443",
+                "💦 10 - Trojan - IPv4 : 443",
+                "💦 11 - Trojan - IPv6 : 443",
+                "💦 12 - Trojan - IPv6 : 443",
+                "💦 13 - Trojan - Domain : 2096",
+                "💦 14 - Trojan - Domain : 2096",
+                "💦 15 - Trojan - IPv4 : 2096",
+                "💦 16 - Trojan - IPv4 : 2096",
+                "💦 17 - Trojan - IPv6 : 2096",
+                "💦 18 - Trojan - IPv6 : 2096"
+            ],
+            "interrupt_exist_connections": false
+        },
+        {
+            "type": "direct",
+            "tag": "direct"
+        },
+        {
+            "type": "urltest",
+            "tag": "💦 Best Ping 🚀",
+            "outbounds": [
+                "💦 1 - VLESS - Domain : 2086",
+                "💦 2 - VLESS - Domain : 2086",
+                "💦 3 - VLESS - IPv4 : 2086",
+                "💦 4 - VLESS - IPv4 : 2086",
+                "💦 5 - VLESS - IPv6 : 2086",
+                "💦 6 - VLESS - IPv6 : 2086",
+                "💦 7 - VLESS - Domain : 443",
+                "💦 8 - VLESS - Domain : 443",
+                "💦 9 - VLESS - IPv4 : 443",
+                "💦 10 - VLESS - IPv4 : 443",
+                "💦 11 - VLESS - IPv6 : 443",
+                "💦 12 - VLESS - IPv6 : 443",
+                "💦 13 - VLESS - Domain : 2096",
+                "💦 14 - VLESS - Domain : 2096",
+                "💦 15 - VLESS - IPv4 : 2096",
+                "💦 16 - VLESS - IPv4 : 2096",
+                "💦 17 - VLESS - IPv6 : 2096",
+                "💦 18 - VLESS - IPv6 : 2096",
+                "💦 1 - Trojan - Domain : 2086",
+                "💦 2 - Trojan - Domain : 2086",
+                "💦 3 - Trojan - IPv4 : 2086",
+                "💦 4 - Trojan - IPv4 : 2086",
+                "💦 5 - Trojan - IPv6 : 2086",
+                "💦 6 - Trojan - IPv6 : 2086",
+                "💦 7 - Trojan - Domain : 443",
+                "💦 8 - Trojan - Domain : 443",
+                "💦 9 - Trojan - IPv4 : 443",
+                "💦 10 - Trojan - IPv4 : 443",
+                "💦 11 - Trojan - IPv6 : 443",
+                "💦 12 - Trojan - IPv6 : 443",
+                "💦 13 - Trojan - Domain : 2096",
+                "💦 14 - Trojan - Domain : 2096",
+                "💦 15 - Trojan - IPv4 : 2096",
+                "💦 16 - Trojan - IPv4 : 2096",
+                "💦 17 - Trojan - IPv6 : 2096",
+                "💦 18 - Trojan - IPv6 : 2096"
+            ],
+            "url": "https://www.gstatic.com/generate_204",
+            "interrupt_exist_connections": false,
+            "interval": "30s"
+        }
+    ],
+    "route": {
+        "rules": [
+            {
+                "ip_cidr": "172.19.0.2",
+                "action": "hijack-dns"
+            },
+            {
+                "clash_mode": "Direct",
+                "outbound": "direct"
+            },
+            {
+                "clash_mode": "Global",
+                "outbound": "✅ Selector"
+            },
+            {
+                "action": "sniff"
+            },
+            {
+                "protocol": "dns",
+                "action": "hijack-dns"
+            },
+            {
+                "ip_is_private": true,
+                "outbound": "direct"
+            },
+            {
+                "network": "udp",
+                "action": "reject"
+            },
+            {
+                "rule_set": [
+                    "geosite-category-ads-all",
+                    "geosite-nsfw"
+                ],
+                "action": "reject"
+            },
+            {
+                "rule_set": [
+                    "geosite-ir"
+                ],
+                "action": "route",
+                "outbound": "direct"
+            },
+            {
+                "rule_set": [
+                    "geoip-ir"
+                ],
+                "action": "route",
+                "outbound": "direct"
+            }
+        ],
+        "rule_set": [
+            {
+                "type": "remote",
+                "tag": "geosite-category-ads-all",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-category-ads-all.srs",
+                "download_detour": "direct"
+            },
+            {
+                "type": "remote",
+                "tag": "geosite-nsfw",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-nsfw.srs",
+                "download_detour": "direct"
+            },
+            {
+                "type": "remote",
+                "tag": "geosite-ir",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-ir.srs",
+                "download_detour": "direct"
+            },
+            {
+                "type": "remote",
+                "tag": "geoip-ir",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-ir.srs",
+                "download_detour": "direct"
+            }
+        ],
+        "auto_detect_interface": true,
+        "default_domain_resolver": {
+            "server": "dns-direct",
+            "strategy": "prefer_ipv4",
+            "rewrite_ttl": 60
+        },
+        "final": "✅ Selector"
+    },
+    "ntp": {
+        "enabled": true,
+        "server": "time.cloudflare.com",
+        "server_port": 123,
+        "domain_resolver": "dns-direct",
+        "interval": "30m",
+        "write_to_system": false
+    },
+    "experimental": {
+        "cache_file": {
+            "enabled": true,
+            "store_fakeip": true
+        },
+        "clash_api": {
+            "external_controller": "127.0.0.1:9090",
+            "external_ui": "ui",
+            "default_mode": "Rule",
+            "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
+            "external_ui_download_detour": "direct"
+        }
+    }
+}
