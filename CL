@@ -96,7 +96,7 @@
             "packet-encoding": "",
             "network": "ws",
             "ws-opts": {
-                "path": "/eyJqdW5rIjoiNzNyRWs1M01GTzBtIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
+                "path": "/eyJqdW5rIjoiZkdra2MwSWVxVFl3eXY4IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -116,7 +116,7 @@
             "packet-encoding": "",
             "network": "ws",
             "ws-opts": {
-                "path": "/eyJqdW5rIjoiZ2NuNUJjTG1IIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
+                "path": "/eyJqdW5rIjoiN2dwNnFDMzR3aWY0IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -136,7 +136,7 @@
             "packet-encoding": "",
             "network": "ws",
             "ws-opts": {
-                "path": "/eyJqdW5rIjoiQlgxUnlVVmVVUGluIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
+                "path": "/eyJqdW5rIjoiUXEzSXh3WnQ1STM2ejF6IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -156,7 +156,7 @@
             "packet-encoding": "",
             "network": "ws",
             "ws-opts": {
-                "path": "/eyJqdW5rIjoiVFhkRzlMdlllTiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
+                "path": "/eyJqdW5rIjoiNjR2T2ZVRU1rYzVpMVQ1cSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -175,7 +175,7 @@
             "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
             "packet-encoding": "",
             "tls": true,
-            "servername": "LOng-Tree-005E.jAsMinE2007.WoRKERS.dev",
+            "servername": "long-TReE-005e.JAsMINE2007.WORkERS.dev",
             "client-fingerprint": "random",
             "skip-cert-verify": false,
             "alpn": [
@@ -183,7 +183,7 @@
             ],
             "network": "ws",
             "ws-opts": {
-                "path": "/eyJqdW5rIjoiT1Q5eUpMZ1M3IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
+                "path": "/eyJqdW5rIjoib0dVV3RWbFBTZ0xFY1JkIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -202,7 +202,7 @@
             "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
             "packet-encoding": "",
             "tls": true,
-            "servername": "lONg-tREe-005E.JasmiNe2007.woRKerS.DeV",
+            "servername": "lONg-tREe-005E.jASMiNE2007.woRKErs.DeV",
             "client-fingerprint": "random",
             "skip-cert-verify": false,
             "alpn": [
@@ -210,7 +210,7 @@
             ],
             "network": "ws",
             "ws-opts": {
-                "path": "/eyJqdW5rIjoiOWYzRkVkOXUiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=",
+                "path": "/eyJqdW5rIjoiUUVsM09qN25hSXc0bnhxNSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -229,7 +229,7 @@
             "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
             "packet-encoding": "",
             "tls": true,
-            "servername": "lONG-TReE-005E.JASmine2007.workeRs.deV",
+            "servername": "lonG-trEE-005E.JAsmiNe2007.wORKErs.deV",
             "client-fingerprint": "random",
             "skip-cert-verify": false,
             "alpn": [
@@ -237,7 +237,7 @@
             ],
             "network": "ws",
             "ws-opts": {
-                "path": "/eyJqdW5rIjoiclhPMGc5SzRPIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
+                "path": "/eyJqdW5rIjoiektsS29ReGEiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=",
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -256,7 +256,7 @@
             "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
             "packet-encoding": "",
             "tls": true,
-            "servername": "lOng-trEe-005e.JASMIne2007.wOrkers.dev",
+            "servername": "LoNg-trEe-005e.jaSMINE2007.WoRkeRS.dEV",
             "client-fingerprint": "random",
             "skip-cert-verify": false,
             "alpn": [
@@ -264,7 +264,7 @@
             ],
             "network": "ws",
             "ws-opts": {
-                "path": "/eyJqdW5rIjoiQ3hmUU1RNVBacmhtIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
+                "path": "/eyJqdW5rIjoidmtCM09hSno2IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -283,7 +283,7 @@
             "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
             "packet-encoding": "",
             "tls": true,
-            "servername": "loNG-TrEe-005e.JASmiNE2007.WoRKers.deV",
+            "servername": "LoNg-TREe-005e.jAsmine2007.WORkERS.DeV",
             "client-fingerprint": "random",
             "skip-cert-verify": false,
             "alpn": [
@@ -291,7 +291,7 @@
             ],
             "network": "ws",
             "ws-opts": {
-                "path": "/eyJqdW5rIjoiZkRWRFJ4VHZNeTM3byIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
+                "path": "/eyJqdW5rIjoiamozYmR2MHRGNVFIRE1vdCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -310,7 +310,7 @@
             "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
             "packet-encoding": "",
             "tls": true,
-            "servername": "lOng-tree-005E.JasMIne2007.worKerS.dEV",
+            "servername": "loNg-tRee-005e.JaSmIne2007.worKeRs.dEV",
             "client-fingerprint": "random",
             "skip-cert-verify": false,
             "alpn": [
@@ -318,7 +318,7 @@
             ],
             "network": "ws",
             "ws-opts": {
-                "path": "/eyJqdW5rIjoiNXJDbVpHOE9qSHVCOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
+                "path": "/eyJqdW5rIjoiOXdUM0NJQWkyTSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -337,7 +337,7 @@
             "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
             "packet-encoding": "",
             "tls": true,
-            "servername": "long-tReE-005E.JAsmINE2007.WORKers.DeV",
+            "servername": "LOnG-TrEE-005e.jASMiNE2007.WoRkers.dEv",
             "client-fingerprint": "random",
             "skip-cert-verify": false,
             "alpn": [
@@ -345,7 +345,7 @@
             ],
             "network": "ws",
             "ws-opts": {
-                "path": "/eyJqdW5rIjoicXdaVVB6V2w0aHB6IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
+                "path": "/eyJqdW5rIjoiSzFsMHVoWXJFN2F1TVN4IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -364,7 +364,7 @@
             "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
             "packet-encoding": "",
             "tls": true,
-            "servername": "lonG-TrEe-005e.jAsminE2007.wOrKErs.Dev",
+            "servername": "lOng-TREE-005e.JAsMINe2007.woRKErS.Dev",
             "client-fingerprint": "random",
             "skip-cert-verify": false,
             "alpn": [
@@ -372,7 +372,7 @@
             ],
             "network": "ws",
             "ws-opts": {
-                "path": "/eyJqdW5rIjoiaDZQN1FZNjI3WkFxIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
+                "path": "/eyJqdW5rIjoicmdlRVJ2TmJPN3lMIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol",
                 "headers": {
