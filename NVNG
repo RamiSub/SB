@@ -8,25 +8,10 @@
             "loglevel": "warning"
         },
         "dns": {
-            "hosts": {
-                "geosite:category-ads-all": "#3",
-                "geosite:category-ads-ir": "#3",
-                "geosite:category-porn": "#3"
-            },
             "servers": [
                 {
                     "address": "https://8.8.8.8/dns-query",
                     "tag": "remote-dns"
-                },
-                {
-                    "address": "8.8.8.8",
-                    "domains": [
-                        "geosite:category-ir"
-                    ],
-                    "expectIPs": [
-                        "geoip:ir"
-                    ],
-                    "skipFallback": true
                 },
                 {
                     "address": "8.8.8.8",
@@ -91,7 +76,7 @@
                     "network": "ws",
                     "wsSettings": {
                         "host": "long-tree-005e.jasmine2007.workers.dev",
-                        "path": "/eyJqdW5rIjoiMnhhcURXalYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=?ed=2560"
+                        "path": "/eyJqdW5rIjoiVmw3ajlDM3AiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=?ed=2560"
                     },
                     "security": "none",
                     "sockopt": {
@@ -179,29 +164,6 @@
                 {
                     "network": "udp",
                     "outboundTag": "block",
-                    "type": "field"
-                },
-                {
-                    "domain": [
-                        "geosite:category-ads-all",
-                        "geosite:category-ads-ir",
-                        "geosite:category-porn"
-                    ],
-                    "outboundTag": "block",
-                    "type": "field"
-                },
-                {
-                    "domain": [
-                        "geosite:category-ir"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "ip": [
-                        "geoip:ir"
-                    ],
-                    "outboundTag": "direct",
                     "type": "field"
                 },
                 {
@@ -236,25 +198,10 @@
             "loglevel": "warning"
         },
         "dns": {
-            "hosts": {
-                "geosite:category-ads-all": "#3",
-                "geosite:category-ads-ir": "#3",
-                "geosite:category-porn": "#3"
-            },
             "servers": [
                 {
                     "address": "https://8.8.8.8/dns-query",
                     "tag": "remote-dns"
-                },
-                {
-                    "address": "8.8.8.8",
-                    "domains": [
-                        "geosite:category-ir"
-                    ],
-                    "expectIPs": [
-                        "geoip:ir"
-                    ],
-                    "skipFallback": true
                 },
                 {
                     "address": "8.8.8.8",
@@ -319,7 +266,7 @@
                     "network": "ws",
                     "wsSettings": {
                         "host": "long-tree-005e.jasmine2007.workers.dev",
-                        "path": "/eyJqdW5rIjoiZ2I4SHRGTzZPIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed=2560"
+                        "path": "/eyJqdW5rIjoiMkVJVFRzVXVOUyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==?ed=2560"
                     },
                     "security": "none",
                     "sockopt": {
@@ -407,29 +354,6 @@
                 {
                     "network": "udp",
                     "outboundTag": "block",
-                    "type": "field"
-                },
-                {
-                    "domain": [
-                        "geosite:category-ads-all",
-                        "geosite:category-ads-ir",
-                        "geosite:category-porn"
-                    ],
-                    "outboundTag": "block",
-                    "type": "field"
-                },
-                {
-                    "domain": [
-                        "geosite:category-ir"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "ip": [
-                        "geoip:ir"
-                    ],
-                    "outboundTag": "direct",
                     "type": "field"
                 },
                 {
@@ -464,25 +388,10 @@
             "loglevel": "warning"
         },
         "dns": {
-            "hosts": {
-                "geosite:category-ads-all": "#3",
-                "geosite:category-ads-ir": "#3",
-                "geosite:category-porn": "#3"
-            },
             "servers": [
                 {
                     "address": "https://8.8.8.8/dns-query",
                     "tag": "remote-dns"
-                },
-                {
-                    "address": "8.8.8.8",
-                    "domains": [
-                        "geosite:category-ir"
-                    ],
-                    "expectIPs": [
-                        "geoip:ir"
-                    ],
-                    "skipFallback": true
                 }
             ],
             "queryStrategy": "UseIP",
@@ -540,7 +449,7 @@
                     "network": "ws",
                     "wsSettings": {
                         "host": "long-tree-005e.jasmine2007.workers.dev",
-                        "path": "/eyJqdW5rIjoiRHpwU2paZ3QxIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed=2560"
+                        "path": "/eyJqdW5rIjoiNDVZTFE2OGh4V1pkRE96IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed=2560"
                     },
                     "security": "none",
                     "sockopt": {
@@ -628,29 +537,6 @@
                 {
                     "network": "udp",
                     "outboundTag": "block",
-                    "type": "field"
-                },
-                {
-                    "domain": [
-                        "geosite:category-ads-all",
-                        "geosite:category-ads-ir",
-                        "geosite:category-porn"
-                    ],
-                    "outboundTag": "block",
-                    "type": "field"
-                },
-                {
-                    "domain": [
-                        "geosite:category-ir"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "ip": [
-                        "geoip:ir"
-                    ],
-                    "outboundTag": "direct",
                     "type": "field"
                 },
                 {
@@ -685,25 +571,10 @@
             "loglevel": "warning"
         },
         "dns": {
-            "hosts": {
-                "geosite:category-ads-all": "#3",
-                "geosite:category-ads-ir": "#3",
-                "geosite:category-porn": "#3"
-            },
             "servers": [
                 {
                     "address": "https://8.8.8.8/dns-query",
                     "tag": "remote-dns"
-                },
-                {
-                    "address": "8.8.8.8",
-                    "domains": [
-                        "geosite:category-ir"
-                    ],
-                    "expectIPs": [
-                        "geoip:ir"
-                    ],
-                    "skipFallback": true
                 }
             ],
             "queryStrategy": "UseIP",
@@ -761,7 +632,7 @@
                     "network": "ws",
                     "wsSettings": {
                         "host": "long-tree-005e.jasmine2007.workers.dev",
-                        "path": "/eyJqdW5rIjoiY1B3ZklrNFoiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=?ed=2560"
+                        "path": "/eyJqdW5rIjoiWklialBpQUdySDciLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=?ed=2560"
                     },
                     "security": "none",
                     "sockopt": {
@@ -852,29 +723,6 @@
                     "type": "field"
                 },
                 {
-                    "domain": [
-                        "geosite:category-ads-all",
-                        "geosite:category-ads-ir",
-                        "geosite:category-porn"
-                    ],
-                    "outboundTag": "block",
-                    "type": "field"
-                },
-                {
-                    "domain": [
-                        "geosite:category-ir"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "ip": [
-                        "geoip:ir"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
                     "network": "tcp",
                     "outboundTag": "proxy",
                     "type": "field"
@@ -906,25 +754,10 @@
             "loglevel": "warning"
         },
         "dns": {
-            "hosts": {
-                "geosite:category-ads-all": "#3",
-                "geosite:category-ads-ir": "#3",
-                "geosite:category-porn": "#3"
-            },
             "servers": [
                 {
                     "address": "https://8.8.8.8/dns-query",
                     "tag": "remote-dns"
-                },
-                {
-                    "address": "8.8.8.8",
-                    "domains": [
-                        "geosite:category-ir"
-                    ],
-                    "expectIPs": [
-                        "geoip:ir"
-                    ],
-                    "skipFallback": true
                 },
                 {
                     "address": "8.8.8.8",
@@ -989,11 +822,11 @@
                     "network": "ws",
                     "wsSettings": {
                         "host": "long-tree-005e.jasmine2007.workers.dev",
-                        "path": "/eyJqdW5rIjoic1RRcGdhbWpPdDEwIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed=2560"
+                        "path": "/eyJqdW5rIjoib0tudko5ZnMiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=?ed=2560"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "loNG-tRee-005e.JaSmIne2007.WORkeRS.DEV",
+                        "serverName": "LoNG-TreE-005E.jasmiNe2007.worKeRs.DEV",
                         "fingerprint": "random",
                         "alpn": [
                             "http/1.1"
@@ -1085,29 +918,6 @@
                 {
                     "network": "udp",
                     "outboundTag": "block",
-                    "type": "field"
-                },
-                {
-                    "domain": [
-                        "geosite:category-ads-all",
-                        "geosite:category-ads-ir",
-                        "geosite:category-porn"
-                    ],
-                    "outboundTag": "block",
-                    "type": "field"
-                },
-                {
-                    "domain": [
-                        "geosite:category-ir"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "ip": [
-                        "geoip:ir"
-                    ],
-                    "outboundTag": "direct",
                     "type": "field"
                 },
                 {
@@ -1142,25 +952,10 @@
             "loglevel": "warning"
         },
         "dns": {
-            "hosts": {
-                "geosite:category-ads-all": "#3",
-                "geosite:category-ads-ir": "#3",
-                "geosite:category-porn": "#3"
-            },
             "servers": [
                 {
                     "address": "https://8.8.8.8/dns-query",
                     "tag": "remote-dns"
-                },
-                {
-                    "address": "8.8.8.8",
-                    "domains": [
-                        "geosite:category-ir"
-                    ],
-                    "expectIPs": [
-                        "geoip:ir"
-                    ],
-                    "skipFallback": true
                 },
                 {
                     "address": "8.8.8.8",
@@ -1225,11 +1020,11 @@
                     "network": "ws",
                     "wsSettings": {
                         "host": "long-tree-005e.jasmine2007.workers.dev",
-                        "path": "/eyJqdW5rIjoiNmZFSGczeWkzIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed=2560"
+                        "path": "/eyJqdW5rIjoiVnhoOWNaNjhRIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed=2560"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "LOng-trEe-005e.JaSMine2007.wOrkErs.DeV",
+                        "serverName": "loNG-tREE-005e.jAsmIne2007.WorkeRS.dEv",
                         "fingerprint": "random",
                         "alpn": [
                             "http/1.1"
@@ -1324,29 +1119,6 @@
                     "type": "field"
                 },
                 {
-                    "domain": [
-                        "geosite:category-ads-all",
-                        "geosite:category-ads-ir",
-                        "geosite:category-porn"
-                    ],
-                    "outboundTag": "block",
-                    "type": "field"
-                },
-                {
-                    "domain": [
-                        "geosite:category-ir"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "ip": [
-                        "geoip:ir"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
                     "network": "tcp",
                     "outboundTag": "proxy",
                     "type": "field"
@@ -1378,25 +1150,10 @@
             "loglevel": "warning"
         },
         "dns": {
-            "hosts": {
-                "geosite:category-ads-all": "#3",
-                "geosite:category-ads-ir": "#3",
-                "geosite:category-porn": "#3"
-            },
             "servers": [
                 {
                     "address": "https://8.8.8.8/dns-query",
                     "tag": "remote-dns"
-                },
-                {
-                    "address": "8.8.8.8",
-                    "domains": [
-                        "geosite:category-ir"
-                    ],
-                    "expectIPs": [
-                        "geoip:ir"
-                    ],
-                    "skipFallback": true
                 }
             ],
             "queryStrategy": "UseIP",
@@ -1454,11 +1211,11 @@
                     "network": "ws",
                     "wsSettings": {
                         "host": "long-tree-005e.jasmine2007.workers.dev",
-                        "path": "/eyJqdW5rIjoiWEpVTldFbnNiVmt3TSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==?ed=2560"
+                        "path": "/eyJqdW5rIjoiaU9takNGVFAxaiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==?ed=2560"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "loNG-tREe-005E.jAsmINE2007.WOrkERs.deV",
+                        "serverName": "long-tREE-005E.JASMIne2007.WoRkERs.DEv",
                         "fingerprint": "random",
                         "alpn": [
                             "http/1.1"
@@ -1553,29 +1310,6 @@
                     "type": "field"
                 },
                 {
-                    "domain": [
-                        "geosite:category-ads-all",
-                        "geosite:category-ads-ir",
-                        "geosite:category-porn"
-                    ],
-                    "outboundTag": "block",
-                    "type": "field"
-                },
-                {
-                    "domain": [
-                        "geosite:category-ir"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "ip": [
-                        "geoip:ir"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
                     "network": "tcp",
                     "outboundTag": "proxy",
                     "type": "field"
@@ -1607,25 +1341,10 @@
             "loglevel": "warning"
         },
         "dns": {
-            "hosts": {
-                "geosite:category-ads-all": "#3",
-                "geosite:category-ads-ir": "#3",
-                "geosite:category-porn": "#3"
-            },
             "servers": [
                 {
                     "address": "https://8.8.8.8/dns-query",
                     "tag": "remote-dns"
-                },
-                {
-                    "address": "8.8.8.8",
-                    "domains": [
-                        "geosite:category-ir"
-                    ],
-                    "expectIPs": [
-                        "geoip:ir"
-                    ],
-                    "skipFallback": true
                 }
             ],
             "queryStrategy": "UseIP",
@@ -1683,11 +1402,11 @@
                     "network": "ws",
                     "wsSettings": {
                         "host": "long-tree-005e.jasmine2007.workers.dev",
-                        "path": "/eyJqdW5rIjoiYUg4TkwyMVV2ekxEIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed=2560"
+                        "path": "/eyJqdW5rIjoiZVROMmhQaUxzWlVibm1NMyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==?ed=2560"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "Long-tree-005E.jaSMine2007.wOrkers.deV",
+                        "serverName": "LoNg-trEE-005E.JAsMInE2007.woRkers.dEV",
                         "fingerprint": "random",
                         "alpn": [
                             "http/1.1"
@@ -1782,29 +1501,6 @@
                     "type": "field"
                 },
                 {
-                    "domain": [
-                        "geosite:category-ads-all",
-                        "geosite:category-ads-ir",
-                        "geosite:category-porn"
-                    ],
-                    "outboundTag": "block",
-                    "type": "field"
-                },
-                {
-                    "domain": [
-                        "geosite:category-ir"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "ip": [
-                        "geoip:ir"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
                     "network": "tcp",
                     "outboundTag": "proxy",
                     "type": "field"
@@ -1836,25 +1532,10 @@
             "loglevel": "warning"
         },
         "dns": {
-            "hosts": {
-                "geosite:category-ads-all": "#3",
-                "geosite:category-ads-ir": "#3",
-                "geosite:category-porn": "#3"
-            },
             "servers": [
                 {
                     "address": "https://8.8.8.8/dns-query",
                     "tag": "remote-dns"
-                },
-                {
-                    "address": "8.8.8.8",
-                    "domains": [
-                        "geosite:category-ir"
-                    ],
-                    "expectIPs": [
-                        "geoip:ir"
-                    ],
-                    "skipFallback": true
                 },
                 {
                     "address": "8.8.8.8",
@@ -1919,11 +1600,11 @@
                     "network": "ws",
                     "wsSettings": {
                         "host": "long-tree-005e.jasmine2007.workers.dev",
-                        "path": "/eyJqdW5rIjoiQ1M2a3RFNFduSkI1IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed=2560"
+                        "path": "/eyJqdW5rIjoiYjFubTZlalFvaCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==?ed=2560"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "loNG-TReE-005e.JAsmIne2007.WORkerS.Dev",
+                        "serverName": "long-trEe-005E.JaSMInE2007.WORkErs.dEV",
                         "fingerprint": "random",
                         "alpn": [
                             "http/1.1"
@@ -2018,29 +1699,6 @@
                     "type": "field"
                 },
                 {
-                    "domain": [
-                        "geosite:category-ads-all",
-                        "geosite:category-ads-ir",
-                        "geosite:category-porn"
-                    ],
-                    "outboundTag": "block",
-                    "type": "field"
-                },
-                {
-                    "domain": [
-                        "geosite:category-ir"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "ip": [
-                        "geoip:ir"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
                     "network": "tcp",
                     "outboundTag": "proxy",
                     "type": "field"
@@ -2072,25 +1730,10 @@
             "loglevel": "warning"
         },
         "dns": {
-            "hosts": {
-                "geosite:category-ads-all": "#3",
-                "geosite:category-ads-ir": "#3",
-                "geosite:category-porn": "#3"
-            },
             "servers": [
                 {
                     "address": "https://8.8.8.8/dns-query",
                     "tag": "remote-dns"
-                },
-                {
-                    "address": "8.8.8.8",
-                    "domains": [
-                        "geosite:category-ir"
-                    ],
-                    "expectIPs": [
-                        "geoip:ir"
-                    ],
-                    "skipFallback": true
                 },
                 {
                     "address": "8.8.8.8",
@@ -2155,11 +1798,11 @@
                     "network": "ws",
                     "wsSettings": {
                         "host": "long-tree-005e.jasmine2007.workers.dev",
-                        "path": "/eyJqdW5rIjoiMnlTdFlLUG44cU9WZnNpeiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==?ed=2560"
+                        "path": "/eyJqdW5rIjoibTIyaE9xSXMiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=?ed=2560"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "LONg-tReE-005E.JASmINe2007.WoRKErs.Dev",
+                        "serverName": "lonG-tRee-005E.JAsMiNE2007.wOrKErS.dEV",
                         "fingerprint": "random",
                         "alpn": [
                             "http/1.1"
@@ -2254,29 +1897,6 @@
                     "type": "field"
                 },
                 {
-                    "domain": [
-                        "geosite:category-ads-all",
-                        "geosite:category-ads-ir",
-                        "geosite:category-porn"
-                    ],
-                    "outboundTag": "block",
-                    "type": "field"
-                },
-                {
-                    "domain": [
-                        "geosite:category-ir"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "ip": [
-                        "geoip:ir"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
                     "network": "tcp",
                     "outboundTag": "proxy",
                     "type": "field"
@@ -2308,25 +1928,10 @@
             "loglevel": "warning"
         },
         "dns": {
-            "hosts": {
-                "geosite:category-ads-all": "#3",
-                "geosite:category-ads-ir": "#3",
-                "geosite:category-porn": "#3"
-            },
             "servers": [
                 {
                     "address": "https://8.8.8.8/dns-query",
                     "tag": "remote-dns"
-                },
-                {
-                    "address": "8.8.8.8",
-                    "domains": [
-                        "geosite:category-ir"
-                    ],
-                    "expectIPs": [
-                        "geoip:ir"
-                    ],
-                    "skipFallback": true
                 }
             ],
             "queryStrategy": "UseIP",
@@ -2384,11 +1989,11 @@
                     "network": "ws",
                     "wsSettings": {
                         "host": "long-tree-005e.jasmine2007.workers.dev",
-                        "path": "/eyJqdW5rIjoiWkNETlhWTGpDIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed=2560"
+                        "path": "/eyJqdW5rIjoiVk5SOER3VlMiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=?ed=2560"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "lOng-tRee-005e.jASmInE2007.worKERS.dEv",
+                        "serverName": "LONg-TRee-005e.JaSmInE2007.wORkErS.DEV",
                         "fingerprint": "random",
                         "alpn": [
                             "http/1.1"
@@ -2483,29 +2088,6 @@
                     "type": "field"
                 },
                 {
-                    "domain": [
-                        "geosite:category-ads-all",
-                        "geosite:category-ads-ir",
-                        "geosite:category-porn"
-                    ],
-                    "outboundTag": "block",
-                    "type": "field"
-                },
-                {
-                    "domain": [
-                        "geosite:category-ir"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "ip": [
-                        "geoip:ir"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
                     "network": "tcp",
                     "outboundTag": "proxy",
                     "type": "field"
@@ -2537,25 +2119,10 @@
             "loglevel": "warning"
         },
         "dns": {
-            "hosts": {
-                "geosite:category-ads-all": "#3",
-                "geosite:category-ads-ir": "#3",
-                "geosite:category-porn": "#3"
-            },
             "servers": [
                 {
                     "address": "https://8.8.8.8/dns-query",
                     "tag": "remote-dns"
-                },
-                {
-                    "address": "8.8.8.8",
-                    "domains": [
-                        "geosite:category-ir"
-                    ],
-                    "expectIPs": [
-                        "geoip:ir"
-                    ],
-                    "skipFallback": true
                 }
             ],
             "queryStrategy": "UseIP",
@@ -2613,11 +2180,11 @@
                     "network": "ws",
                     "wsSettings": {
                         "host": "long-tree-005e.jasmine2007.workers.dev",
-                        "path": "/eyJqdW5rIjoiOUtwNTZ5amJhVVM4ZkciLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=?ed=2560"
+                        "path": "/eyJqdW5rIjoiSHpkNmJsUk1XZTBkYiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==?ed=2560"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "loNg-Tree-005e.JASmiNe2007.WORkErs.DeV",
+                        "serverName": "LOnG-TREe-005e.jAsMine2007.WORKeRs.dEv",
                         "fingerprint": "random",
                         "alpn": [
                             "http/1.1"
@@ -2712,29 +2279,6 @@
                     "type": "field"
                 },
                 {
-                    "domain": [
-                        "geosite:category-ads-all",
-                        "geosite:category-ads-ir",
-                        "geosite:category-porn"
-                    ],
-                    "outboundTag": "block",
-                    "type": "field"
-                },
-                {
-                    "domain": [
-                        "geosite:category-ir"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "ip": [
-                        "geoip:ir"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
                     "network": "tcp",
                     "outboundTag": "proxy",
                     "type": "field"
@@ -2766,25 +2310,10 @@
             "loglevel": "warning"
         },
         "dns": {
-            "hosts": {
-                "geosite:category-ads-all": "#3",
-                "geosite:category-ads-ir": "#3",
-                "geosite:category-porn": "#3"
-            },
             "servers": [
                 {
                     "address": "https://8.8.8.8/dns-query",
                     "tag": "remote-dns"
-                },
-                {
-                    "address": "8.8.8.8",
-                    "domains": [
-                        "geosite:category-ir"
-                    ],
-                    "expectIPs": [
-                        "geoip:ir"
-                    ],
-                    "skipFallback": true
                 },
                 {
                     "address": "8.8.8.8",
@@ -2850,7 +2379,7 @@
                     "network": "ws",
                     "wsSettings": {
                         "host": "long-tree-005e.jasmine2007.workers.dev",
-                        "path": "/eyJqdW5rIjoiMnhhcURXalYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=?ed=2560"
+                        "path": "/eyJqdW5rIjoiVmw3ajlDM3AiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=?ed=2560"
                     },
                     "security": "none",
                     "sockopt": {
@@ -2885,7 +2414,7 @@
                     "network": "ws",
                     "wsSettings": {
                         "host": "long-tree-005e.jasmine2007.workers.dev",
-                        "path": "/eyJqdW5rIjoiZ2I4SHRGTzZPIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed=2560"
+                        "path": "/eyJqdW5rIjoiMkVJVFRzVXVOUyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==?ed=2560"
                     },
                     "security": "none",
                     "sockopt": {
@@ -2920,7 +2449,7 @@
                     "network": "ws",
                     "wsSettings": {
                         "host": "long-tree-005e.jasmine2007.workers.dev",
-                        "path": "/eyJqdW5rIjoiRHpwU2paZ3QxIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed=2560"
+                        "path": "/eyJqdW5rIjoiNDVZTFE2OGh4V1pkRE96IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed=2560"
                     },
                     "security": "none",
                     "sockopt": {
@@ -2955,7 +2484,7 @@
                     "network": "ws",
                     "wsSettings": {
                         "host": "long-tree-005e.jasmine2007.workers.dev",
-                        "path": "/eyJqdW5rIjoiY1B3ZklrNFoiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=?ed=2560"
+                        "path": "/eyJqdW5rIjoiWklialBpQUdySDciLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=?ed=2560"
                     },
                     "security": "none",
                     "sockopt": {
@@ -2990,11 +2519,11 @@
                     "network": "ws",
                     "wsSettings": {
                         "host": "long-tree-005e.jasmine2007.workers.dev",
-                        "path": "/eyJqdW5rIjoic1RRcGdhbWpPdDEwIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed=2560"
+                        "path": "/eyJqdW5rIjoib0tudko5ZnMiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=?ed=2560"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "loNG-tRee-005e.JaSmIne2007.WORkeRS.DEV",
+                        "serverName": "LoNG-TreE-005E.jasmiNe2007.worKeRs.DEV",
                         "fingerprint": "random",
                         "alpn": [
                             "http/1.1"
@@ -3033,11 +2562,11 @@
                     "network": "ws",
                     "wsSettings": {
                         "host": "long-tree-005e.jasmine2007.workers.dev",
-                        "path": "/eyJqdW5rIjoiNmZFSGczeWkzIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed=2560"
+                        "path": "/eyJqdW5rIjoiVnhoOWNaNjhRIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed=2560"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "LOng-trEe-005e.JaSMine2007.wOrkErs.DeV",
+                        "serverName": "loNG-tREE-005e.jAsmIne2007.WorkeRS.dEv",
                         "fingerprint": "random",
                         "alpn": [
                             "http/1.1"
@@ -3076,11 +2605,11 @@
                     "network": "ws",
                     "wsSettings": {
                         "host": "long-tree-005e.jasmine2007.workers.dev",
-                        "path": "/eyJqdW5rIjoiWEpVTldFbnNiVmt3TSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==?ed=2560"
+                        "path": "/eyJqdW5rIjoiaU9takNGVFAxaiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==?ed=2560"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "loNG-tREe-005E.jAsmINE2007.WOrkERs.deV",
+                        "serverName": "long-tREE-005E.JASMIne2007.WoRkERs.DEv",
                         "fingerprint": "random",
                         "alpn": [
                             "http/1.1"
@@ -3119,11 +2648,11 @@
                     "network": "ws",
                     "wsSettings": {
                         "host": "long-tree-005e.jasmine2007.workers.dev",
-                        "path": "/eyJqdW5rIjoiYUg4TkwyMVV2ekxEIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed=2560"
+                        "path": "/eyJqdW5rIjoiZVROMmhQaUxzWlVibm1NMyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==?ed=2560"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "Long-tree-005E.jaSMine2007.wOrkers.deV",
+                        "serverName": "LoNg-trEE-005E.JAsMInE2007.woRkers.dEV",
                         "fingerprint": "random",
                         "alpn": [
                             "http/1.1"
@@ -3162,11 +2691,11 @@
                     "network": "ws",
                     "wsSettings": {
                         "host": "long-tree-005e.jasmine2007.workers.dev",
-                        "path": "/eyJqdW5rIjoiQ1M2a3RFNFduSkI1IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed=2560"
+                        "path": "/eyJqdW5rIjoiYjFubTZlalFvaCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==?ed=2560"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "loNG-TReE-005e.JAsmIne2007.WORkerS.Dev",
+                        "serverName": "long-trEe-005E.JaSMInE2007.WORkErs.dEV",
                         "fingerprint": "random",
                         "alpn": [
                             "http/1.1"
@@ -3205,11 +2734,11 @@
                     "network": "ws",
                     "wsSettings": {
                         "host": "long-tree-005e.jasmine2007.workers.dev",
-                        "path": "/eyJqdW5rIjoiMnlTdFlLUG44cU9WZnNpeiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==?ed=2560"
+                        "path": "/eyJqdW5rIjoibTIyaE9xSXMiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=?ed=2560"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "LONg-tReE-005E.JASmINe2007.WoRKErs.Dev",
+                        "serverName": "lonG-tRee-005E.JAsMiNE2007.wOrKErS.dEV",
                         "fingerprint": "random",
                         "alpn": [
                             "http/1.1"
@@ -3248,11 +2777,11 @@
                     "network": "ws",
                     "wsSettings": {
                         "host": "long-tree-005e.jasmine2007.workers.dev",
-                        "path": "/eyJqdW5rIjoiWkNETlhWTGpDIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed=2560"
+                        "path": "/eyJqdW5rIjoiVk5SOER3VlMiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=?ed=2560"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "lOng-tRee-005e.jASmInE2007.worKERS.dEv",
+                        "serverName": "LONg-TRee-005e.JaSmInE2007.wORkErS.DEV",
                         "fingerprint": "random",
                         "alpn": [
                             "http/1.1"
@@ -3291,11 +2820,11 @@
                     "network": "ws",
                     "wsSettings": {
                         "host": "long-tree-005e.jasmine2007.workers.dev",
-                        "path": "/eyJqdW5rIjoiOUtwNTZ5amJhVVM4ZkciLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=?ed=2560"
+                        "path": "/eyJqdW5rIjoiSHpkNmJsUk1XZTBkYiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==?ed=2560"
                     },
                     "security": "tls",
                     "tlsSettings": {
-                        "serverName": "loNg-Tree-005e.JASmiNe2007.WORkErs.DeV",
+                        "serverName": "LOnG-TREe-005e.jAsMine2007.WORKeRs.dEv",
                         "fingerprint": "random",
                         "alpn": [
                             "http/1.1"
@@ -3387,29 +2916,6 @@
                 {
                     "network": "udp",
                     "outboundTag": "block",
-                    "type": "field"
-                },
-                {
-                    "domain": [
-                        "geosite:category-ads-all",
-                        "geosite:category-ads-ir",
-                        "geosite:category-porn"
-                    ],
-                    "outboundTag": "block",
-                    "type": "field"
-                },
-                {
-                    "domain": [
-                        "geosite:category-ir"
-                    ],
-                    "outboundTag": "direct",
-                    "type": "field"
-                },
-                {
-                    "ip": [
-                        "geoip:ir"
-                    ],
-                    "outboundTag": "direct",
                     "type": "field"
                 },
                 {

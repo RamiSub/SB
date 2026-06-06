@@ -26,29 +26,6 @@
             {
                 "clash_mode": "Global",
                 "server": "dns-remote"
-            },
-            {
-                "rule_set": [
-                    "geosite-category-ads-all",
-                    "geosite-nsfw"
-                ],
-                "action": "reject"
-            },
-            {
-                "type": "logical",
-                "mode": "and",
-                "rules": [
-                    {
-                        "rule_set": [
-                            "geosite-ir"
-                        ]
-                    },
-                    {
-                        "rule_set": "geoip-ir"
-                    }
-                ],
-                "action": "route",
-                "server": "dns-direct"
             }
         ],
         "strategy": "ipv4_only",
@@ -85,7 +62,7 @@
             "network": "tcp",
             "transport": {
                 "type": "ws",
-                "path": "/eyJqdW5rIjoibmZpclEwSDZLcFYzRHNQNiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
+                "path": "/eyJqdW5rIjoiNFRBR0RQRjBaIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
                 "max_early_data": 2560,
                 "early_data_header_name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -104,7 +81,7 @@
             "network": "tcp",
             "transport": {
                 "type": "ws",
-                "path": "/eyJqdW5rIjoiczZlbnZ6YWpwTVAiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=",
+                "path": "/eyJqdW5rIjoiaDduQWhROXVHIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
                 "max_early_data": 2560,
                 "early_data_header_name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -115,7 +92,7 @@
         {
             "tag": "💦 3 - VLESS - IPv4 : 2086",
             "type": "vless",
-            "server": "172.67.194.6",
+            "server": "104.21.12.93",
             "server_port": 2086,
             "tcp_fast_open": false,
             "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
@@ -123,7 +100,7 @@
             "network": "tcp",
             "transport": {
                 "type": "ws",
-                "path": "/eyJqdW5rIjoiRUQwakxrbGlUMzh3IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
+                "path": "/eyJqdW5rIjoiMWVyNXVKSTg3YnRnTiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
                 "max_early_data": 2560,
                 "early_data_header_name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -134,7 +111,7 @@
         {
             "tag": "💦 4 - VLESS - IPv4 : 2086",
             "type": "vless",
-            "server": "104.21.12.93",
+            "server": "172.67.194.6",
             "server_port": 2086,
             "tcp_fast_open": false,
             "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
@@ -142,7 +119,7 @@
             "network": "tcp",
             "transport": {
                 "type": "ws",
-                "path": "/eyJqdW5rIjoiVnE4T1QwQmw2dnFnIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
+                "path": "/eyJqdW5rIjoiRzJIVEE0OHFqRzEiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=",
                 "max_early_data": 2560,
                 "early_data_header_name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -161,7 +138,7 @@
             "network": "tcp",
             "tls": {
                 "enabled": true,
-                "server_name": "LOng-TRee-005e.JaSMiNE2007.WorKErs.DEV",
+                "server_name": "LOng-treE-005E.JasMinE2007.woRKERS.dEV",
                 "record_fragment": false,
                 "insecure": false,
                 "alpn": [
@@ -174,7 +151,7 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "/eyJqdW5rIjoicXloMWd3TVU3MkFHZkZqbSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
+                "path": "/eyJqdW5rIjoiUlZsR21zYVJmVFkzalR1IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
                 "max_early_data": 2560,
                 "early_data_header_name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -193,7 +170,7 @@
             "network": "tcp",
             "tls": {
                 "enabled": true,
-                "server_name": "LOng-Tree-005e.JaSMINE2007.wORkers.DEv",
+                "server_name": "lOnG-TREe-005e.JasmINe2007.WorkeRs.deV",
                 "record_fragment": false,
                 "insecure": false,
                 "alpn": [
@@ -206,7 +183,7 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "/eyJqdW5rIjoiQXJtTDJBM3RGR2huYTAiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=",
+                "path": "/eyJqdW5rIjoib1d6Qlc5U2pGZW9jSCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
                 "max_early_data": 2560,
                 "early_data_header_name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -217,7 +194,7 @@
         {
             "tag": "💦 7 - VLESS - IPv4 : 443",
             "type": "vless",
-            "server": "172.67.194.6",
+            "server": "104.21.12.93",
             "server_port": 443,
             "tcp_fast_open": false,
             "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
@@ -225,7 +202,7 @@
             "network": "tcp",
             "tls": {
                 "enabled": true,
-                "server_name": "LoNG-tReE-005e.jaSmINe2007.woRkers.dEv",
+                "server_name": "Long-trEE-005E.JaSMine2007.wOrkerS.deV",
                 "record_fragment": false,
                 "insecure": false,
                 "alpn": [
@@ -238,7 +215,7 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "/eyJqdW5rIjoiQ29pbUZpcU5GbWsweiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
+                "path": "/eyJqdW5rIjoiTU9TZ0JIdEJaQ21MIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
                 "max_early_data": 2560,
                 "early_data_header_name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -249,7 +226,7 @@
         {
             "tag": "💦 8 - VLESS - IPv4 : 443",
             "type": "vless",
-            "server": "104.21.12.93",
+            "server": "172.67.194.6",
             "server_port": 443,
             "tcp_fast_open": false,
             "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
@@ -257,7 +234,7 @@
             "network": "tcp",
             "tls": {
                 "enabled": true,
-                "server_name": "LONG-TReE-005E.jAsMINe2007.wORKErS.dEv",
+                "server_name": "long-tReE-005E.JasmiNe2007.worKErS.dev",
                 "record_fragment": false,
                 "insecure": false,
                 "alpn": [
@@ -270,7 +247,7 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "/eyJqdW5rIjoiVEx6UTJieDh6QkFCMHk3IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
+                "path": "/eyJqdW5rIjoieVd1TjZ4UUxMQXNnQTkxIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
                 "max_early_data": 2560,
                 "early_data_header_name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -289,7 +266,7 @@
             "network": "tcp",
             "tls": {
                 "enabled": true,
-                "server_name": "Long-tREE-005e.jasMINe2007.woRkers.Dev",
+                "server_name": "LONg-TREE-005e.JAsMINe2007.wORkeRs.deV",
                 "record_fragment": false,
                 "insecure": false,
                 "alpn": [
@@ -302,7 +279,7 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "/eyJqdW5rIjoiUFI3RjBRc2JMOHRxQ2dBMiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
+                "path": "/eyJqdW5rIjoiZ3VwM0VWMEFJZ09RRXJUIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
                 "max_early_data": 2560,
                 "early_data_header_name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -321,7 +298,7 @@
             "network": "tcp",
             "tls": {
                 "enabled": true,
-                "server_name": "lOng-trEE-005e.jAsMInE2007.WOrkErS.dev",
+                "server_name": "LoNg-Tree-005E.JaSmInE2007.WOrkErs.DeV",
                 "record_fragment": false,
                 "insecure": false,
                 "alpn": [
@@ -334,7 +311,7 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "/eyJqdW5rIjoiUGplR0ZBbGhldWhTQiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
+                "path": "/eyJqdW5rIjoiNXRqTnkwZVJkUEFsUXdMRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
                 "max_early_data": 2560,
                 "early_data_header_name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -345,7 +322,7 @@
         {
             "tag": "💦 11 - VLESS - IPv4 : 2096",
             "type": "vless",
-            "server": "172.67.194.6",
+            "server": "104.21.12.93",
             "server_port": 2096,
             "tcp_fast_open": false,
             "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
@@ -353,7 +330,7 @@
             "network": "tcp",
             "tls": {
                 "enabled": true,
-                "server_name": "lONg-TReE-005E.jASMine2007.WOrkers.dev",
+                "server_name": "Long-Tree-005E.JaSMInE2007.worKerS.dEv",
                 "record_fragment": false,
                 "insecure": false,
                 "alpn": [
@@ -366,7 +343,7 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "/eyJqdW5rIjoiOFV3d1FibEFJaVAiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=",
+                "path": "/eyJqdW5rIjoiTkdzdVNqSVFKMSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
                 "max_early_data": 2560,
                 "early_data_header_name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -377,7 +354,7 @@
         {
             "tag": "💦 12 - VLESS - IPv4 : 2096",
             "type": "vless",
-            "server": "104.21.12.93",
+            "server": "172.67.194.6",
             "server_port": 2096,
             "tcp_fast_open": false,
             "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
@@ -385,7 +362,7 @@
             "network": "tcp",
             "tls": {
                 "enabled": true,
-                "server_name": "lonG-TRee-005e.JAsmInE2007.WORkERs.deV",
+                "server_name": "loNG-tree-005e.jasMInE2007.workers.deV",
                 "record_fragment": false,
                 "insecure": false,
                 "alpn": [
@@ -398,7 +375,7 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "/eyJqdW5rIjoiUDVES1JYU05RNklSRiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
+                "path": "/eyJqdW5rIjoidGxCVWtWT0JpIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
                 "max_early_data": 2560,
                 "early_data_header_name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -480,57 +457,6 @@
             {
                 "network": "udp",
                 "action": "reject"
-            },
-            {
-                "rule_set": [
-                    "geosite-category-ads-all",
-                    "geosite-nsfw"
-                ],
-                "action": "reject"
-            },
-            {
-                "rule_set": [
-                    "geosite-ir"
-                ],
-                "action": "route",
-                "outbound": "direct"
-            },
-            {
-                "rule_set": [
-                    "geoip-ir"
-                ],
-                "action": "route",
-                "outbound": "direct"
-            }
-        ],
-        "rule_set": [
-            {
-                "type": "remote",
-                "tag": "geosite-category-ads-all",
-                "format": "binary",
-                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-category-ads-all.srs",
-                "download_detour": "direct"
-            },
-            {
-                "type": "remote",
-                "tag": "geosite-nsfw",
-                "format": "binary",
-                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-nsfw.srs",
-                "download_detour": "direct"
-            },
-            {
-                "type": "remote",
-                "tag": "geosite-ir",
-                "format": "binary",
-                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-ir.srs",
-                "download_detour": "direct"
-            },
-            {
-                "type": "remote",
-                "tag": "geoip-ir",
-                "format": "binary",
-                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-ir.srs",
-                "download_detour": "direct"
             }
         ],
         "auto_detect_interface": true,

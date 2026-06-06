@@ -30,10 +30,6 @@
         "use-system-hosts": false,
         "listen": "0.0.0.0:1053",
         "ipv6": false,
-        "hosts": {
-            "rule-set:category-ads-all": "rcode://refused",
-            "rule-set:nsfw": "rcode://refused"
-        },
         "nameserver": [
             "https://8.8.8.8/dns-query#✅ Selector"
         ],
@@ -44,9 +40,6 @@
             "8.8.8.8#DIRECT"
         ],
         "direct-nameserver-follow-policy": true,
-        "nameserver-policy": {
-            "rule-set:ir": "8.8.8.8#DIRECT"
-        },
         "enhanced-mode": "redir-host"
     },
     "tun": {
@@ -103,7 +96,7 @@
             "packet-encoding": "",
             "network": "ws",
             "ws-opts": {
-                "path": "/eyJqdW5rIjoiZ0djSkhxWHoiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=",
+                "path": "/eyJqdW5rIjoiNzNyRWs1M01GTzBtIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -123,7 +116,7 @@
             "packet-encoding": "",
             "network": "ws",
             "ws-opts": {
-                "path": "/eyJqdW5rIjoickVkREhiREMiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=",
+                "path": "/eyJqdW5rIjoiZ2NuNUJjTG1IIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -134,7 +127,7 @@
         {
             "name": "💦 3 - VLESS - IPv4 : 2086",
             "type": "vless",
-            "server": "104.21.12.93",
+            "server": "172.67.194.6",
             "port": 2086,
             "ip-version": "ipv4",
             "tfo": false,
@@ -143,7 +136,7 @@
             "packet-encoding": "",
             "network": "ws",
             "ws-opts": {
-                "path": "/eyJqdW5rIjoiY3JjWGV1ak1WSHIxWmlkIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
+                "path": "/eyJqdW5rIjoiQlgxUnlVVmVVUGluIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -154,7 +147,7 @@
         {
             "name": "💦 4 - VLESS - IPv4 : 2086",
             "type": "vless",
-            "server": "172.67.194.6",
+            "server": "104.21.12.93",
             "port": 2086,
             "ip-version": "ipv4",
             "tfo": false,
@@ -163,7 +156,7 @@
             "packet-encoding": "",
             "network": "ws",
             "ws-opts": {
-                "path": "/eyJqdW5rIjoiQ3JtdUxTdHR4UDJmdG0iLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=",
+                "path": "/eyJqdW5rIjoiVFhkRzlMdlllTiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -182,7 +175,7 @@
             "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
             "packet-encoding": "",
             "tls": true,
-            "servername": "loNg-TRee-005e.JasMINE2007.wOrkERs.DeV",
+            "servername": "LOng-Tree-005E.jAsMinE2007.WoRKERS.dev",
             "client-fingerprint": "random",
             "skip-cert-verify": false,
             "alpn": [
@@ -190,7 +183,7 @@
             ],
             "network": "ws",
             "ws-opts": {
-                "path": "/eyJqdW5rIjoiQm0xUFpUd28yIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
+                "path": "/eyJqdW5rIjoiT1Q5eUpMZ1M3IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -209,7 +202,7 @@
             "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
             "packet-encoding": "",
             "tls": true,
-            "servername": "LonG-TREE-005e.JaSmiNe2007.workeRs.dEv",
+            "servername": "lONg-tREe-005E.JasmiNe2007.woRKerS.DeV",
             "client-fingerprint": "random",
             "skip-cert-verify": false,
             "alpn": [
@@ -217,7 +210,7 @@
             ],
             "network": "ws",
             "ws-opts": {
-                "path": "/eyJqdW5rIjoiTU9INjNNUDAiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=",
+                "path": "/eyJqdW5rIjoiOWYzRkVkOXUiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=",
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -228,7 +221,7 @@
         {
             "name": "💦 7 - VLESS - IPv4 : 443",
             "type": "vless",
-            "server": "104.21.12.93",
+            "server": "172.67.194.6",
             "port": 443,
             "ip-version": "ipv4",
             "tfo": false,
@@ -236,7 +229,7 @@
             "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
             "packet-encoding": "",
             "tls": true,
-            "servername": "loNG-TrEe-005E.jASminE2007.woRKerS.Dev",
+            "servername": "lONG-TReE-005E.JASmine2007.workeRs.deV",
             "client-fingerprint": "random",
             "skip-cert-verify": false,
             "alpn": [
@@ -244,7 +237,7 @@
             ],
             "network": "ws",
             "ws-opts": {
-                "path": "/eyJqdW5rIjoiNlZIejVMb2dsbDI4WVEiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=",
+                "path": "/eyJqdW5rIjoiclhPMGc5SzRPIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -255,7 +248,7 @@
         {
             "name": "💦 8 - VLESS - IPv4 : 443",
             "type": "vless",
-            "server": "172.67.194.6",
+            "server": "104.21.12.93",
             "port": 443,
             "ip-version": "ipv4",
             "tfo": false,
@@ -263,7 +256,7 @@
             "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
             "packet-encoding": "",
             "tls": true,
-            "servername": "loNg-TREE-005E.jASmIne2007.worKerS.dev",
+            "servername": "lOng-trEe-005e.JASMIne2007.wOrkers.dev",
             "client-fingerprint": "random",
             "skip-cert-verify": false,
             "alpn": [
@@ -271,7 +264,7 @@
             ],
             "network": "ws",
             "ws-opts": {
-                "path": "/eyJqdW5rIjoiYWhsVHIwQ2FnTSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
+                "path": "/eyJqdW5rIjoiQ3hmUU1RNVBacmhtIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -290,7 +283,7 @@
             "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
             "packet-encoding": "",
             "tls": true,
-            "servername": "lOnG-TrEe-005e.jAsminE2007.WOrkErs.DEv",
+            "servername": "loNG-TrEe-005e.JASmiNE2007.WoRKers.deV",
             "client-fingerprint": "random",
             "skip-cert-verify": false,
             "alpn": [
@@ -298,7 +291,7 @@
             ],
             "network": "ws",
             "ws-opts": {
-                "path": "/eyJqdW5rIjoibTJrT1hVSGp5IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
+                "path": "/eyJqdW5rIjoiZkRWRFJ4VHZNeTM3byIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -317,7 +310,7 @@
             "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
             "packet-encoding": "",
             "tls": true,
-            "servername": "lONg-TREe-005e.JAsMInE2007.WorkErs.deV",
+            "servername": "lOng-tree-005E.JasMIne2007.worKerS.dEV",
             "client-fingerprint": "random",
             "skip-cert-verify": false,
             "alpn": [
@@ -325,7 +318,7 @@
             ],
             "network": "ws",
             "ws-opts": {
-                "path": "/eyJqdW5rIjoidlBXR3g0R1hiZSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
+                "path": "/eyJqdW5rIjoiNXJDbVpHOE9qSHVCOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -336,7 +329,7 @@
         {
             "name": "💦 11 - VLESS - IPv4 : 2096",
             "type": "vless",
-            "server": "104.21.12.93",
+            "server": "172.67.194.6",
             "port": 2096,
             "ip-version": "ipv4",
             "tfo": false,
@@ -344,7 +337,7 @@
             "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
             "packet-encoding": "",
             "tls": true,
-            "servername": "lOng-tREE-005E.jASmInE2007.woRkErs.dEV",
+            "servername": "long-tReE-005E.JAsmINE2007.WORKers.DeV",
             "client-fingerprint": "random",
             "skip-cert-verify": false,
             "alpn": [
@@ -352,7 +345,7 @@
             ],
             "network": "ws",
             "ws-opts": {
-                "path": "/eyJqdW5rIjoiUzlPYXNHdFdkVm1NUiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
+                "path": "/eyJqdW5rIjoicXdaVVB6V2w0aHB6IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -363,7 +356,7 @@
         {
             "name": "💦 12 - VLESS - IPv4 : 2096",
             "type": "vless",
-            "server": "172.67.194.6",
+            "server": "104.21.12.93",
             "port": 2096,
             "ip-version": "ipv4",
             "tfo": false,
@@ -371,7 +364,7 @@
             "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
             "packet-encoding": "",
             "tls": true,
-            "servername": "LOng-tReE-005e.JASMInE2007.woRKers.Dev",
+            "servername": "lonG-TrEe-005e.jAsminE2007.wOrKErs.Dev",
             "client-fingerprint": "random",
             "skip-cert-verify": false,
             "alpn": [
@@ -379,7 +372,7 @@
             ],
             "network": "ws",
             "ws-opts": {
-                "path": "/eyJqdW5rIjoiVk81UUVFbkJUZHBFSXIxIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
+                "path": "/eyJqdW5rIjoiaDZQN1FZNjI3WkFxIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol",
                 "headers": {
@@ -430,47 +423,9 @@
             "tolerance": 50
         }
     ],
-    "rule-providers": {
-        "category-ads-all": {
-            "type": "http",
-            "format": "text",
-            "behavior": "domain",
-            "path": "./ruleset/category-ads-all.txt",
-            "interval": 86400,
-            "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/category-ads-all.txt"
-        },
-        "nsfw": {
-            "type": "http",
-            "format": "text",
-            "behavior": "domain",
-            "path": "./ruleset/nsfw.txt",
-            "interval": 86400,
-            "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/nsfw.txt"
-        },
-        "ir": {
-            "type": "http",
-            "format": "text",
-            "behavior": "domain",
-            "path": "./ruleset/ir.txt",
-            "interval": 86400,
-            "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/ir.txt"
-        },
-        "ir-cidr": {
-            "type": "http",
-            "format": "text",
-            "behavior": "ipcidr",
-            "path": "./ruleset/ir-cidr.txt",
-            "interval": 86400,
-            "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/ircidr.txt"
-        }
-    },
     "rules": [
         "GEOIP,lan,DIRECT,no-resolve",
         "NETWORK,udp,REJECT",
-        "RULE-SET,category-ads-all,REJECT",
-        "RULE-SET,nsfw,REJECT",
-        "RULE-SET,ir,DIRECT",
-        "RULE-SET,ir-cidr,DIRECT",
         "MATCH,✅ Selector"
     ],
     "ntp": {
