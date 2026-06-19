@@ -1,0 +1,661 @@
+{
+    "mixed-port": 7890,
+    "ipv6": true,
+    "allow-lan": true,
+    "unified-delay": false,
+    "log-level": "warning",
+    "mode": "rule",
+    "disable-keep-alive": false,
+    "keep-alive-idle": 10,
+    "keep-alive-interval": 15,
+    "tcp-concurrent": true,
+    "geo-auto-update": true,
+    "geo-update-interval": 168,
+    "external-controller": "127.0.0.1:9090",
+    "external-controller-cors": {
+        "allow-origins": [
+            "*"
+        ],
+        "allow-private-network": true
+    },
+    "external-ui": "ui",
+    "external-ui-url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
+    "profile": {
+        "store-selected": true,
+        "store-fake-ip": true
+    },
+    "dns": {
+        "enable": true,
+        "respect-rules": true,
+        "use-system-hosts": false,
+        "listen": "0.0.0.0:1053",
+        "ipv6": false,
+        "nameserver": [
+            "https://8.8.8.8/dns-query#✅ Selector"
+        ],
+        "proxy-server-nameserver": [
+            "8.8.8.8#DIRECT"
+        ],
+        "direct-nameserver": [
+            "8.8.8.8#DIRECT"
+        ],
+        "direct-nameserver-follow-policy": true,
+        "enhanced-mode": "redir-host"
+    },
+    "tun": {
+        "enable": true,
+        "stack": "mixed",
+        "auto-route": true,
+        "strict-route": true,
+        "auto-detect-interface": true,
+        "dns-hijack": [
+            "any:53",
+            "tcp://any:53"
+        ],
+        "mtu": 9000
+    },
+    "sniffer": {
+        "enable": true,
+        "force-dns-mapping": true,
+        "parse-pure-ip": true,
+        "override-destination": true,
+        "sniff": {
+            "HTTP": {
+                "ports": [
+                    80,
+                    8080,
+                    8880,
+                    2052,
+                    2082,
+                    2086,
+                    2095
+                ]
+            },
+            "TLS": {
+                "ports": [
+                    443,
+                    8443,
+                    2053,
+                    2083,
+                    2087,
+                    2096
+                ]
+            }
+        }
+    },
+    "proxies": [
+        {
+            "name": "💦 1 - VLESS - Domain : 2086",
+            "type": "vless",
+            "server": "long-tree-005e.jasmine2007.workers.dev",
+            "port": 2086,
+            "ip-version": "ipv4",
+            "tfo": false,
+            "udp": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet-encoding": "",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoiZWtzbEh6S1d2YlAiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 2 - VLESS - Domain : 2086",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "port": 2086,
+            "ip-version": "ipv4",
+            "tfo": false,
+            "udp": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet-encoding": "",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoiMlpSR1RSTGh1MCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 3 - VLESS - IPv4 : 2086",
+            "type": "vless",
+            "server": "104.21.12.93",
+            "port": 2086,
+            "ip-version": "ipv4",
+            "tfo": false,
+            "udp": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet-encoding": "",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoiZG4wWGsxSnNvWjdocGcyIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 4 - VLESS - IPv4 : 2086",
+            "type": "vless",
+            "server": "172.67.194.6",
+            "port": 2086,
+            "ip-version": "ipv4",
+            "tfo": false,
+            "udp": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet-encoding": "",
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoiVkFlazBlSGgiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 5 - VLESS - Domain : 443",
+            "type": "vless",
+            "server": "long-tree-005e.jasmine2007.workers.dev",
+            "port": 443,
+            "ip-version": "ipv4",
+            "tfo": false,
+            "udp": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet-encoding": "",
+            "tls": true,
+            "servername": "LONg-TREE-005E.JAsmiNE2007.WoRkeRS.dEv",
+            "client-fingerprint": "random",
+            "skip-cert-verify": false,
+            "alpn": [
+                "http/1.1"
+            ],
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoiRTJwOUd0d1d1d0xVemIyIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 6 - VLESS - Domain : 443",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "port": 443,
+            "ip-version": "ipv4",
+            "tfo": false,
+            "udp": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet-encoding": "",
+            "tls": true,
+            "servername": "LONg-trEe-005e.JASMIne2007.WoRkeRS.dev",
+            "client-fingerprint": "random",
+            "skip-cert-verify": false,
+            "alpn": [
+                "http/1.1"
+            ],
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoicE9OU0R5b04xMTQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 7 - VLESS - IPv4 : 443",
+            "type": "vless",
+            "server": "104.21.12.93",
+            "port": 443,
+            "ip-version": "ipv4",
+            "tfo": false,
+            "udp": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet-encoding": "",
+            "tls": true,
+            "servername": "LONg-tREe-005e.jAsmine2007.WorkeRS.dev",
+            "client-fingerprint": "random",
+            "skip-cert-verify": false,
+            "alpn": [
+                "http/1.1"
+            ],
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoieXJ3NENpMEhWNVUiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 8 - VLESS - IPv4 : 443",
+            "type": "vless",
+            "server": "172.67.194.6",
+            "port": 443,
+            "ip-version": "ipv4",
+            "tfo": false,
+            "udp": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet-encoding": "",
+            "tls": true,
+            "servername": "LOng-tRee-005E.JASmine2007.WORkeRs.dEV",
+            "client-fingerprint": "random",
+            "skip-cert-verify": false,
+            "alpn": [
+                "http/1.1"
+            ],
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoiWDJWeWl5bTRyR3JTcSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 9 - VLESS - Domain : 2096",
+            "type": "vless",
+            "server": "long-tree-005e.jasmine2007.workers.dev",
+            "port": 2096,
+            "ip-version": "ipv4",
+            "tfo": false,
+            "udp": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet-encoding": "",
+            "tls": true,
+            "servername": "LOng-TREE-005e.JAsMiNE2007.WorkErS.Dev",
+            "client-fingerprint": "random",
+            "skip-cert-verify": false,
+            "alpn": [
+                "http/1.1"
+            ],
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoiWGR0Y0lUcjlGYzZsb2h1USIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 10 - VLESS - Domain : 2096",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "port": 2096,
+            "ip-version": "ipv4",
+            "tfo": false,
+            "udp": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet-encoding": "",
+            "tls": true,
+            "servername": "loNG-trEe-005E.jaSmiNE2007.wORKerS.DEV",
+            "client-fingerprint": "random",
+            "skip-cert-verify": false,
+            "alpn": [
+                "http/1.1"
+            ],
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoieVl6aTJvTHl2T3diM28wIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 11 - VLESS - IPv4 : 2096",
+            "type": "vless",
+            "server": "104.21.12.93",
+            "port": 2096,
+            "ip-version": "ipv4",
+            "tfo": false,
+            "udp": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet-encoding": "",
+            "tls": true,
+            "servername": "loNg-tREE-005e.jasmine2007.WORKErS.DeV",
+            "client-fingerprint": "random",
+            "skip-cert-verify": false,
+            "alpn": [
+                "http/1.1"
+            ],
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoiYWo2UXRaaEFKSFAiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 12 - VLESS - IPv4 : 2096",
+            "type": "vless",
+            "server": "172.67.194.6",
+            "port": 2096,
+            "ip-version": "ipv4",
+            "tfo": false,
+            "udp": false,
+            "uuid": "f5acd1db-5b97-4420-9e27-6953f9456c98",
+            "packet-encoding": "",
+            "tls": true,
+            "servername": "LONG-tREe-005e.jAsmiNe2007.wOrkeRS.dEV",
+            "client-fingerprint": "random",
+            "skip-cert-verify": false,
+            "alpn": [
+                "http/1.1"
+            ],
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoiNjdidm80MWo1RCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 1 - Trojan - Domain : 443",
+            "type": "trojan",
+            "server": "long-tree-005e.jasmine2007.workers.dev",
+            "port": 443,
+            "ip-version": "ipv4",
+            "tfo": false,
+            "udp": false,
+            "password": "Tu!!H<2_D1Y37Xr(",
+            "tls": true,
+            "sni": "LoNG-TREe-005e.jAsMinE2007.WoRKERS.deV",
+            "client-fingerprint": "random",
+            "skip-cert-verify": false,
+            "alpn": [
+                "http/1.1"
+            ],
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoiV2hTSkdxTkF4eEYxNiIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 2 - Trojan - Domain : 443",
+            "type": "trojan",
+            "server": "www.speedtest.net",
+            "port": 443,
+            "ip-version": "ipv4",
+            "tfo": false,
+            "udp": false,
+            "password": "Tu!!H<2_D1Y37Xr(",
+            "tls": true,
+            "sni": "lONg-TReE-005E.JAsMINe2007.WOrKerS.dev",
+            "client-fingerprint": "random",
+            "skip-cert-verify": false,
+            "alpn": [
+                "http/1.1"
+            ],
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoiSG9qYnpOMXk0ZkpoY2dPIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 3 - Trojan - IPv4 : 443",
+            "type": "trojan",
+            "server": "104.21.12.93",
+            "port": 443,
+            "ip-version": "ipv4",
+            "tfo": false,
+            "udp": false,
+            "password": "Tu!!H<2_D1Y37Xr(",
+            "tls": true,
+            "sni": "LonG-TRee-005e.jAsMinE2007.worKerS.DEv",
+            "client-fingerprint": "random",
+            "skip-cert-verify": false,
+            "alpn": [
+                "http/1.1"
+            ],
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoiczFkY3hCYTIiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 4 - Trojan - IPv4 : 443",
+            "type": "trojan",
+            "server": "172.67.194.6",
+            "port": 443,
+            "ip-version": "ipv4",
+            "tfo": false,
+            "udp": false,
+            "password": "Tu!!H<2_D1Y37Xr(",
+            "tls": true,
+            "sni": "lOnG-TReE-005e.JaSmINe2007.workERs.dEv",
+            "client-fingerprint": "random",
+            "skip-cert-verify": false,
+            "alpn": [
+                "http/1.1"
+            ],
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoiYVVvd3lrTmMiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 5 - Trojan - Domain : 2096",
+            "type": "trojan",
+            "server": "long-tree-005e.jasmine2007.workers.dev",
+            "port": 2096,
+            "ip-version": "ipv4",
+            "tfo": false,
+            "udp": false,
+            "password": "Tu!!H<2_D1Y37Xr(",
+            "tls": true,
+            "sni": "long-trEe-005e.jASmINe2007.WorkerS.DeV",
+            "client-fingerprint": "random",
+            "skip-cert-verify": false,
+            "alpn": [
+                "http/1.1"
+            ],
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoiMHJYS1VycmoiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 6 - Trojan - Domain : 2096",
+            "type": "trojan",
+            "server": "www.speedtest.net",
+            "port": 2096,
+            "ip-version": "ipv4",
+            "tfo": false,
+            "udp": false,
+            "password": "Tu!!H<2_D1Y37Xr(",
+            "tls": true,
+            "sni": "lONg-TrEe-005e.JasmInE2007.wOrkerS.dev",
+            "client-fingerprint": "random",
+            "skip-cert-verify": false,
+            "alpn": [
+                "http/1.1"
+            ],
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoiTkhtVmhzaURDQ2xLaksiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 7 - Trojan - IPv4 : 2096",
+            "type": "trojan",
+            "server": "104.21.12.93",
+            "port": 2096,
+            "ip-version": "ipv4",
+            "tfo": false,
+            "udp": false,
+            "password": "Tu!!H<2_D1Y37Xr(",
+            "tls": true,
+            "sni": "LOnG-tree-005e.jaSmInE2007.WorkErS.DeV",
+            "client-fingerprint": "random",
+            "skip-cert-verify": false,
+            "alpn": [
+                "http/1.1"
+            ],
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoidVJvT1JSeWtXRUtrblNjRyIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 8 - Trojan - IPv4 : 2096",
+            "type": "trojan",
+            "server": "172.67.194.6",
+            "port": 2096,
+            "ip-version": "ipv4",
+            "tfo": false,
+            "udp": false,
+            "password": "Tu!!H<2_D1Y37Xr(",
+            "tls": true,
+            "sni": "loNg-trEE-005E.JasmIne2007.WorkErS.DEv",
+            "client-fingerprint": "random",
+            "skip-cert-verify": false,
+            "alpn": [
+                "http/1.1"
+            ],
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoiV2RSRktqRlA2QTd5IiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "long-tree-005e.jasmine2007.workers.dev"
+                }
+            }
+        }
+    ],
+    "proxy-groups": [
+        {
+            "name": "✅ Selector",
+            "type": "select",
+            "proxies": [
+                "💦 Best Ping 🚀",
+                "💦 1 - VLESS - Domain : 2086",
+                "💦 2 - VLESS - Domain : 2086",
+                "💦 3 - VLESS - IPv4 : 2086",
+                "💦 4 - VLESS - IPv4 : 2086",
+                "💦 5 - VLESS - Domain : 443",
+                "💦 6 - VLESS - Domain : 443",
+                "💦 7 - VLESS - IPv4 : 443",
+                "💦 8 - VLESS - IPv4 : 443",
+                "💦 9 - VLESS - Domain : 2096",
+                "💦 10 - VLESS - Domain : 2096",
+                "💦 11 - VLESS - IPv4 : 2096",
+                "💦 12 - VLESS - IPv4 : 2096",
+                "💦 1 - Trojan - Domain : 443",
+                "💦 2 - Trojan - Domain : 443",
+                "💦 3 - Trojan - IPv4 : 443",
+                "💦 4 - Trojan - IPv4 : 443",
+                "💦 5 - Trojan - Domain : 2096",
+                "💦 6 - Trojan - Domain : 2096",
+                "💦 7 - Trojan - IPv4 : 2096",
+                "💦 8 - Trojan - IPv4 : 2096"
+            ]
+        },
+        {
+            "name": "💦 Best Ping 🚀",
+            "type": "url-test",
+            "proxies": [
+                "💦 1 - VLESS - Domain : 2086",
+                "💦 2 - VLESS - Domain : 2086",
+                "💦 3 - VLESS - IPv4 : 2086",
+                "💦 4 - VLESS - IPv4 : 2086",
+                "💦 5 - VLESS - Domain : 443",
+                "💦 6 - VLESS - Domain : 443",
+                "💦 7 - VLESS - IPv4 : 443",
+                "💦 8 - VLESS - IPv4 : 443",
+                "💦 9 - VLESS - Domain : 2096",
+                "💦 10 - VLESS - Domain : 2096",
+                "💦 11 - VLESS - IPv4 : 2096",
+                "💦 12 - VLESS - IPv4 : 2096",
+                "💦 1 - Trojan - Domain : 443",
+                "💦 2 - Trojan - Domain : 443",
+                "💦 3 - Trojan - IPv4 : 443",
+                "💦 4 - Trojan - IPv4 : 443",
+                "💦 5 - Trojan - Domain : 2096",
+                "💦 6 - Trojan - Domain : 2096",
+                "💦 7 - Trojan - IPv4 : 2096",
+                "💦 8 - Trojan - IPv4 : 2096"
+            ],
+            "url": "https://www.gstatic.com/generate_204",
+            "interval": 30,
+            "tolerance": 50
+        }
+    ],
+    "rules": [
+        "GEOIP,lan,DIRECT,no-resolve",
+        "NETWORK,udp,REJECT",
+        "MATCH,✅ Selector"
+    ],
+    "ntp": {
+        "enable": true,
+        "server": "time.cloudflare.com",
+        "port": 123,
+        "interval": 30
+    }
+}
