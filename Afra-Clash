@@ -1,6 +1,3 @@
-# Afra - FLClash / Clash.Meta config
-# بذار توی یه فایل مثل: afra-flclash.yaml و لینک raw رو بده به FLClash
-
 port: 7890
 socks-port: 7891
 allow-lan: true
