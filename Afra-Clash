@@ -1,0 +1,113 @@
+# Afra - FLClash / Clash.Meta config
+# بذار توی یه فایل مثل: afra-flclash.yaml و لینک raw رو بده به FLClash
+
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+
+proxies:
+  - name: "🇩🇪 Afra - VLESS : 443"
+    type: vless
+    server: misty-rain-ceec.ramtingli.workers.dev
+    port: 443
+    uuid: 5ec4e9f3-6953-e68e-294e-58cc69727673
+    udp: true
+    tls: true
+    servername: misty-rain-ceec.ramtingli.workers.dev
+    network: ws
+    client-fingerprint: chrome
+    ws-opts:
+      path: /rami
+      headers:
+        Host: misty-rain-ceec.ramtingli.workers.dev
+
+  - name: "🇩🇪 Afra - Trojan : 443"
+    type: trojan
+    server: misty-rain-ceec.ramtingli.workers.dev
+    port: 443
+    password: 5ec4e9f3-6953-e68e-294e-58cc69727673
+    udp: true
+    tls: true
+    sni: misty-rain-ceec.ramtingli.workers.dev
+    network: ws
+    client-fingerprint: chrome
+    ws-opts:
+      path: /rami
+      headers:
+        Host: misty-rain-ceec.ramtingli.workers.dev
+
+  - name: "🇩🇪 Afra - VLESS : 2053"
+    type: vless
+    server: misty-rain-ceec.ramtingli.workers.dev
+    port: 2053
+    uuid: 5ec4e9f3-6953-e68e-294e-58cc69727673
+    udp: true
+    tls: true
+    servername: misty-rain-ceec.ramtingli.workers.dev
+    network: ws
+    client-fingerprint: chrome
+    ws-opts:
+      path: /rami
+      headers:
+        Host: misty-rain-ceec.ramtingli.workers.dev
+
+  - name: "🇩🇪 Afra - Trojan : 2053"
+    type: trojan
+    server: misty-rain-ceec.ramtingli.workers.dev
+    port: 2053
+    password: 5ec4e9f3-6953-e68e-294e-58cc69727673
+    udp: true
+    tls: true
+    sni: misty-rain-ceec.ramtingli.workers.dev
+    network: ws
+    client-fingerprint: chrome
+    ws-opts:
+      path: /rami
+      headers:
+        Host: misty-rain-ceec.ramtingli.workers.dev
+
+  - name: "🇩🇪 Afra - VLESS : 8080"
+    type: vless
+    server: misty-rain-ceec.ramtingli.workers.dev
+    port: 8080
+    uuid: 5ec4e9f3-6953-e68e-294e-58cc69727673
+    udp: true
+    tls: false
+    network: ws
+    client-fingerprint: chrome
+    ws-opts:
+      path: /rami
+      headers:
+        Host: misty-rain-ceec.ramtingli.workers.dev
+
+  - name: "🇩🇪 Afra - Trojan : 8080"
+    type: trojan
+    server: misty-rain-ceec.ramtingli.workers.dev
+    port: 8080
+    password: 5ec4e9f3-6953-e68e-294e-58cc69727673
+    udp: true
+    tls: false
+    network: ws
+    client-fingerprint: chrome
+    ws-opts:
+      path: /rami
+      headers:
+        Host: misty-rain-ceec.ramtingli.workers.dev
+
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - "🇩🇪 Afra - VLESS : 443"
+      - "🇩🇪 Afra - Trojan : 443"
+      - "🇩🇪 Afra - VLESS : 2053"
+      - "🇩🇪 Afra - Trojan : 2053"
+      - "🇩🇪 Afra - VLESS : 8080"
+      - "🇩🇪 Afra - Trojan : 8080"
+      - DIRECT
+
+rules:
+  - GEOIP,CN,DIRECT
+  - MATCH,PROXY
