@@ -1,201 +1,116 @@
-{
-    "mixed-port": 7890,
-    "ipv6": true,
-    "allow-lan": true,
-    "unified-delay": false,
-    "log-level": "warning",
-    "mode": "rule",
-    "disable-keep-alive": false,
-    "keep-alive-idle": 10,
-    "keep-alive-interval": 15,
-    "tcp-concurrent": true,
-    "geo-auto-update": true,
-    "geo-update-interval": 168,
-    "external-controller": "127.0.0.1:9090",
-    "external-controller-cors": {
-        "allow-origins": ["*"],
-        "allow-private-network": true
+[
+    {
+        "name": "📊 Used: 0.45 GB / Unlimited GB",
+        "type": "trojan",
+        "server": "127.0.0.1",
+        "port": 1080,
+        "password": "00000000-0000-0000-0000-000000000000",
+        "tls": false,
+        "network": "tcp",
+        "udp": true
     },
-    "external-ui": "ui",
-    "external-ui-url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
-
-    "profile": {
-        "store-selected": true,
-        "store-fake-ip": true
+    {
+        "name": "📅 Expiry: Never Expire",
+        "type": "trojan",
+        "server": "127.0.0.1",
+        "port": 1080,
+        "password": "00000000-0000-0000-0000-000000000000",
+        "tls": false,
+        "network": "tcp",
+        "udp": true
     },
-
-    "dns": {
-        "enable": true,
-        "respect-rules": true,
-        "use-system-hosts": false,
-        "listen": "0.0.0.0:1053",
-        "ipv6": false,
-        "nameserver": ["https://8.8.8.8/dns-query#✅ Selector"],
-        "proxy-server-nameserver": ["8.8.8.8#DIRECT"],
-        "direct-nameserver": ["8.8.8.8#DIRECT"],
-        "direct-nameserver-follow-policy": true,
-        "enhanced-mode": "redir-host"
-    },
-
-    "tun": {
-        "enable": true,
-        "stack": "mixed",
-        "auto-route": true,
-        "strict-route": true,
-        "auto-detect-interface": true,
-        "dns-hijack": ["any:53", "tcp://any:53"],
-        "mtu": 9000
-    },
-
-    "sniffer": {
-        "enable": true,
-        "force-dns-mapping": true,
-        "parse-pure-ip": true,
-        "override-destination": true,
-        "sniff": {
-            "HTTP": { "ports": [80, 8080, 8880, 2052, 2082, 2086, 2095] },
-            "TLS": { "ports": [443, 8443, 2053, 2083, 2087, 2096] }
+    {
+        "name": "🇩🇪 Afra - VLESS : 443",
+        "type": "vless",
+        "server": "misty-rain-ceec.ramtingli.workers.dev",
+        "port": 443,
+        "uuid": "5ec4e9f3-6953-e68e-294e-58cc69727673",
+        "tls": true,
+        "servername": "misty-rain-ceec.ramtingli.workers.dev",
+        "network": "ws",
+        "client-fingerprint": "chrome",
+        "udp": true,
+        "ws-opts": {
+            "path": "/rami",
+            "headers": { "Host": "misty-rain-ceec.ramtingli.workers.dev" }
         }
     },
-
-    "proxies": [
-        {
-            "name": "🇩🇪 Afra - VLESS : 443",
-            "type": "vless",
-            "server": "misty-rain-ceec.ramtingli.workers.dev",
-            "port": 443,
-            "uuid": "5ec4e9f3-6953-e68e-294e-58cc69727673",
-            "tls": true,
-            "servername": "misty-rain-ceec.ramtingli.workers.dev",
-            "network": "ws",
-            "client-fingerprint": "chrome",
-            "udp": true,
-            "ws-opts": {
-                "path": "/rami",
-                "headers": { "Host": "misty-rain-ceec.ramtingli.workers.dev" }
-            }
-        },
-        {
-            "name": "🇩🇪 Afra - Trojan : 443",
-            "type": "trojan",
-            "server": "misty-rain-ceec.ramtingli.workers.dev",
-            "port": 443,
-            "password": "5ec4e9f3-6953-e68e-294e-58cc69727673",
-            "tls": true,
-            "sni": "misty-rain-ceec.ramtingli.workers.dev",
-            "network": "ws",
-            "client-fingerprint": "chrome",
-            "udp": true,
-            "ws-opts": {
-                "path": "/rami",
-                "headers": { "Host": "misty-rain-ceec.ramtingli.workers.dev" }
-            }
-        },
-        {
-            "name": "🇩🇪 Afra - VLESS : 2053",
-            "type": "vless",
-            "server": "misty-rain-ceec.ramtingli.workers.dev",
-            "port": 2053,
-            "uuid": "5ec4e9f3-6953-e68e-294e-58cc69727673",
-            "tls": true,
-            "servername": "misty-rain-ceec.ramtingli.workers.dev",
-            "network": "ws",
-            "client-fingerprint": "chrome",
-            "udp": true,
-            "ws-opts": {
-                "path": "/rami",
-                "headers": { "Host": "misty-rain-ceec.ramtingli.workers.dev" }
-            }
-        },
-        {
-            "name": "🇩🇪 Afra - Trojan : 2053",
-            "type": "trojan",
-            "server": "misty-rain-ceec.ramtingli.workers.dev",
-            "port": 2053,
-            "password": "5ec4e9f3-6953-e68e-294e-58cc69727673",
-            "tls": true,
-            "sni": "misty-rain-ceec.ramtingli.workers.dev",
-            "network": "ws",
-            "client-fingerprint": "chrome",
-            "udp": true,
-            "ws-opts": {
-                "path": "/rami",
-                "headers": { "Host": "misty-rain-ceec.ramtingli.workers.dev" }
-            }
-        },
-        {
-            "name": "🇩🇪 Afra - VLESS : 8080",
-            "type": "vless",
-            "server": "misty-rain-ceec.ramtingli.workers.dev",
-            "port": 8080,
-            "uuid": "5ec4e9f3-6953-e68e-294e-58cc69727673",
-            "tls": false,
-            "network": "ws",
-            "client-fingerprint": "chrome",
-            "udp": true,
-            "ws-opts": {
-                "path": "/rami",
-                "headers": { "Host": "misty-rain-ceec.ramtingli.workers.dev" }
-            }
-        },
-        {
-            "name": "🇩🇪 Afra - Trojan : 8080",
-            "type": "trojan",
-            "server": "misty-rain-ceec.ramtingli.workers.dev",
-            "port": 8080,
-            "password": "5ec4e9f3-6953-e68e-294e-58cc69727673",
-            "tls": false,
-            "network": "ws",
-            "client-fingerprint": "chrome",
-            "udp": true,
-            "ws-opts": {
-                "path": "/rami",
-                "headers": { "Host": "misty-rain-ceec.ramtingli.workers.dev" }
-            }
+    {
+        "name": "🇩🇪 Afra - Trojan : 443",
+        "type": "trojan",
+        "server": "misty-rain-ceec.ramtingli.workers.dev",
+        "port": 443,
+        "password": "5ec4e9f3-6953-e68e-294e-58cc69727673",
+        "tls": true,
+        "sni": "misty-rain-ceec.ramtingli.workers.dev",
+        "network": "ws",
+        "client-fingerprint": "chrome",
+        "udp": true,
+        "ws-opts": {
+            "path": "/rami",
+            "headers": { "Host": "misty-rain-ceec.ramtingli.workers.dev" }
         }
-    ],
-
-    "proxy-groups": [
-        {
-            "name": "✅ Selector",
-            "type": "select",
-            "proxies": [
-                "💦 Best Ping 🚀",
-                "🇩🇪 Afra - VLESS : 443",
-                "🇩🇪 Afra - Trojan : 443",
-                "🇩🇪 Afra - VLESS : 2053",
-                "🇩🇪 Afra - Trojan : 2053",
-                "🇩🇪 Afra - VLESS : 8080",
-                "🇩🇪 Afra - Trojan : 8080"
-            ]
-        },
-        {
-            "name": "💦 Best Ping 🚀",
-            "type": "url-test",
-            "proxies": [
-                "🇩🇪 Afra - VLESS : 443",
-                "🇩🇪 Afra - Trojan : 443",
-                "🇩🇪 Afra - VLESS : 2053",
-                "🇩🇪 Afra - Trojan : 2053",
-                "🇩🇪 Afra - VLESS : 8080",
-                "🇩🇪 Afra - Trojan : 8080"
-            ],
-            "url": "https://www.gstatic.com/generate_204",
-            "interval": 30,
-            "tolerance": 50
+    },
+    {
+        "name": "🇩🇪 Afra - VLESS : 2053",
+        "type": "vless",
+        "server": "misty-rain-ceec.ramtingli.workers.dev",
+        "port": 2053,
+        "uuid": "5ec4e9f3-6953-e68e-294e-58cc69727673",
+        "tls": true,
+        "servername": "misty-rain-ceec.ramtingli.workers.dev",
+        "network": "ws",
+        "client-fingerprint": "chrome",
+        "udp": true,
+        "ws-opts": {
+            "path": "/rami",
+            "headers": { "Host": "misty-rain-ceec.ramtingli.workers.dev" }
         }
-    ],
-
-    "rules": [
-        "GEOIP,lan,DIRECT,no-resolve",
-        "NETWORK,udp,REJECT",
-        "MATCH,✅ Selector"
-    ],
-
-    "ntp": {
-        "enable": true,
-        "server": "time.cloudflare.com",
-        "port": 123,
-        "interval": 30
+    },
+    {
+        "name": "🇩🇪 Afra - Trojan : 2053",
+        "type": "trojan",
+        "server": "misty-rain-ceec.ramtingli.workers.dev",
+        "port": 2053,
+        "password": "5ec4e9f3-6953-e68e-294e-58cc69727673",
+        "tls": true,
+        "sni": "misty-rain-ceec.ramtingli.workers.dev",
+        "network": "ws",
+        "client-fingerprint": "chrome",
+        "udp": true,
+        "ws-opts": {
+            "path": "/rami",
+            "headers": { "Host": "misty-rain-ceec.ramtingli.workers.dev" }
+        }
+    },
+    {
+        "name": "🇩🇪 Afra - VLESS : 8080",
+        "type": "vless",
+        "server": "misty-rain-ceec.ramtingli.workers.dev",
+        "port": 8080,
+        "uuid": "5ec4e9f3-6953-e68e-294e-58cc69727673",
+        "tls": false,
+        "network": "ws",
+        "client-fingerprint": "chrome",
+        "udp": true,
+        "ws-opts": {
+            "path": "/rami",
+            "headers": { "Host": "misty-rain-ceec.ramtingli.workers.dev" }
+        }
+    },
+    {
+        "name": "🇩🇪 Afra - Trojan : 8080",
+        "type": "trojan",
+        "server": "misty-rain-ceec.ramtingli.workers.dev",
+        "port": 8080,
+        "password": "5ec4e9f3-6953-e68e-294e-58cc69727673",
+        "tls": false,
+        "network": "ws",
+        "client-fingerprint": "chrome",
+        "udp": true,
+        "ws-opts": {
+            "path": "/rami",
+            "headers": { "Host": "misty-rain-ceec.ramtingli.workers.dev" }
+        }
     }
-}
+]
