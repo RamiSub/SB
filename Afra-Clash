@@ -1,25 +1,5 @@
 [
     {
-        "name": "📊 Used: 0.45 GB / Unlimited GB",
-        "type": "trojan",
-        "server": "127.0.0.1",
-        "port": 1080,
-        "password": "00000000-0000-0000-0000-000000000000",
-        "tls": false,
-        "network": "tcp",
-        "udp": true
-    },
-    {
-        "name": "📅 Expiry: Never Expire",
-        "type": "trojan",
-        "server": "127.0.0.1",
-        "port": 1080,
-        "password": "00000000-0000-0000-0000-000000000000",
-        "tls": false,
-        "network": "tcp",
-        "udp": true
-    },
-    {
         "name": "🇩🇪 Afra - VLESS : 443",
         "type": "vless",
         "server": "misty-rain-ceec.ramtingli.workers.dev",
