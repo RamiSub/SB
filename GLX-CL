@@ -1,0 +1,331 @@
+mixed-port: 7890
+ipv6: true
+allow-lan: false
+unified-delay: false
+log-level: warning
+mode: rule
+disable-keep-alive: false
+keep-alive-idle: 10
+keep-alive-interval: 15
+tcp-concurrent: true
+geo-auto-update: true
+geo-update-interval: 168
+external-controller: 127.0.0.1:9090
+external-controller-cors:
+    allow-origins:
+        - "*"
+    allow-private-network: true
+external-ui: ui
+external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
+
+profile:
+    store-selected: true
+    store-fake-ip: true
+
+dns:
+    enable: true
+    respect-rules: true
+    use-system-hosts: false
+    listen: 127.0.0.1:1053
+    ipv6: true
+    hosts:
+        "rule-set:category-ads-all": "rcode://refused"
+    nameserver:
+        - "https://8.8.8.8/dns-query#✅ Selector"
+    proxy-server-nameserver:
+        - "8.8.8.8#DIRECT"
+    direct-nameserver:
+        - "8.8.8.8#DIRECT"
+    direct-nameserver-follow-policy: true
+    enhanced-mode: redir-host
+
+tun:
+    enable: true
+    stack: mixed
+    auto-route: true
+    strict-route: true
+    auto-detect-interface: true
+    dns-hijack:
+        - "any:53"
+        - "tcp://any:53"
+    mtu: 9000
+
+sniffer:
+    enable: true
+    force-dns-mapping: true
+    parse-pure-ip: true
+    override-destination: true
+    sniff:
+        HTTP:
+            ports: [80, 8080, 8880, 2052, 2082, 2086, 2095]
+        TLS:
+            ports: [443, 8443, 2053, 2083, 2087, 2096]
+
+proxies:
+    - name: "📊 Used: 0.00 GB / Unlimited GB"
+      type: trojan
+      server: 127.0.0.1
+      port: 80
+      password: "726d746e-0000-4000-8000-000000000000"
+      udp: true
+      tls: false
+    - name: "🇩🇪 Ramtin - VLESS : 443"
+      type: vless
+      server: ramtinrhv.ramtinglx.workers.dev
+      port: 443
+      uuid: 77b825bf-15be-6456-8a13-566500000000
+      udp: true
+      tls: true
+      servername: ramtinrhv.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoialhmZDU0S1JVUE8iLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinrhv.ramtinglx.workers.dev
+      skip-cert-verify: false
+
+    - name: "🇩🇪 Ramtin - Trojan : 443"
+      type: trojan
+      server: ramtinrhv.ramtinglx.workers.dev
+      port: 443
+      password: "77b825bf-15be-6456-8a13-566558042ecd"
+      udp: true
+      tls: true
+      sni: ramtinrhv.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiOWEwaWN6WE10am8iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjowfQ=="
+          headers:
+              Host: ramtinrhv.ramtinglx.workers.dev
+      skip-cert-verify: false
+
+    - name: "🇩🇪 Ramtin - VLESS : 443-1"
+      type: vless
+      server: ramtinrhv.ramtinglx.workers.dev
+      port: 443
+      uuid: 77b825bf-15be-6456-8a13-566500000001
+      udp: true
+      tls: true
+      servername: ramtinrhv.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiUUVZRW52VWVOMVEiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinrhv.ramtinglx.workers.dev
+      skip-cert-verify: false
+
+    - name: "🇩🇪 Ramtin - Trojan : 443-1"
+      type: trojan
+      server: ramtinrhv.ramtinglx.workers.dev
+      port: 443
+      password: "77b825bf-15be-6456-8a13-566558042ecd"
+      udp: true
+      tls: true
+      sni: ramtinrhv.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiSEQ5aFNKMjFqd0IiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoxfQ=="
+          headers:
+              Host: ramtinrhv.ramtinglx.workers.dev
+      skip-cert-verify: false
+
+    - name: "🇩🇪 Ramtin - VLESS : 2053"
+      type: vless
+      server: ramtinrhv.ramtinglx.workers.dev
+      port: 2053
+      uuid: 77b825bf-15be-6456-8a13-566500000002
+      udp: true
+      tls: true
+      servername: ramtinrhv.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiUjVaMWVRQklFUWIiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinrhv.ramtinglx.workers.dev
+      skip-cert-verify: false
+
+    - name: "🇩🇪 Ramtin - Trojan : 2053"
+      type: trojan
+      server: ramtinrhv.ramtinglx.workers.dev
+      port: 2053
+      password: "77b825bf-15be-6456-8a13-566558042ecd"
+      udp: true
+      tls: true
+      sni: ramtinrhv.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiVW05V3o4ZGxZc0IiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoyfQ=="
+          headers:
+              Host: ramtinrhv.ramtinglx.workers.dev
+      skip-cert-verify: false
+
+    - name: "🇩🇪 Ramtin - VLESS : 2053-1"
+      type: vless
+      server: ramtinrhv.ramtinglx.workers.dev
+      port: 2053
+      uuid: 77b825bf-15be-6456-8a13-566500000003
+      udp: true
+      tls: true
+      servername: ramtinrhv.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiVkVNZUtnTXd3blAiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinrhv.ramtinglx.workers.dev
+      skip-cert-verify: false
+
+    - name: "🇩🇪 Ramtin - Trojan : 2053-1"
+      type: trojan
+      server: ramtinrhv.ramtinglx.workers.dev
+      port: 2053
+      password: "77b825bf-15be-6456-8a13-566558042ecd"
+      udp: true
+      tls: true
+      sni: ramtinrhv.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiNUUzRWF3Q3F6a2YiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjozfQ=="
+          headers:
+              Host: ramtinrhv.ramtinglx.workers.dev
+      skip-cert-verify: false
+
+    - name: "🇩🇪 Ramtin - VLESS : 2086"
+      type: vless
+      server: ramtinrhv.ramtinglx.workers.dev
+      port: 2086
+      uuid: 77b825bf-15be-6456-8a13-566500000004
+      udp: true
+      tls: false
+      servername: ramtinrhv.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoieXlNS2FVSm1qSHciLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinrhv.ramtinglx.workers.dev
+      skip-cert-verify: false
+
+    - name: "🇩🇪 Ramtin - Trojan : 2086"
+      type: trojan
+      server: ramtinrhv.ramtinglx.workers.dev
+      port: 2086
+      password: "77b825bf-15be-6456-8a13-566558042ecd"
+      udp: true
+      tls: false
+      sni: ramtinrhv.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiVk1qNkN5OEd3YVoiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4Ijo0fQ=="
+          headers:
+              Host: ramtinrhv.ramtinglx.workers.dev
+      skip-cert-verify: false
+
+    - name: "🇩🇪 Ramtin - VLESS : 2086-1"
+      type: vless
+      server: ramtinrhv.ramtinglx.workers.dev
+      port: 2086
+      uuid: 77b825bf-15be-6456-8a13-566500000005
+      udp: true
+      tls: false
+      servername: ramtinrhv.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiM25YeG5mbU5kYUciLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinrhv.ramtinglx.workers.dev
+      skip-cert-verify: false
+
+    - name: "🇩🇪 Ramtin - Trojan : 2086-1"
+      type: trojan
+      server: ramtinrhv.ramtinglx.workers.dev
+      port: 2086
+      password: "77b825bf-15be-6456-8a13-566558042ecd"
+      udp: true
+      tls: false
+      sni: ramtinrhv.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoibGVqV2RUVzlocW4iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4Ijo1fQ=="
+          headers:
+              Host: ramtinrhv.ramtinglx.workers.dev
+      skip-cert-verify: false
+
+proxy-groups:
+    - name: "✅ Selector"
+      type: select
+      proxies:
+          - "⚡ Fastest"
+          - "🖐 Manual"
+          - "🇩🇪 Germany"
+
+    - name: "⚡ Fastest"
+      type: url-test
+      url: "https://www.gstatic.com/generate_204"
+      interval: 30
+      tolerance: 50
+      proxies:
+          - "🇩🇪 Ramtin - VLESS : 443"
+          - "🇩🇪 Ramtin - Trojan : 443"
+          - "🇩🇪 Ramtin - VLESS : 443-1"
+          - "🇩🇪 Ramtin - Trojan : 443-1"
+          - "🇩🇪 Ramtin - VLESS : 2053"
+          - "🇩🇪 Ramtin - Trojan : 2053"
+          - "🇩🇪 Ramtin - VLESS : 2053-1"
+          - "🇩🇪 Ramtin - Trojan : 2053-1"
+          - "🇩🇪 Ramtin - VLESS : 2086"
+          - "🇩🇪 Ramtin - Trojan : 2086"
+          - "🇩🇪 Ramtin - VLESS : 2086-1"
+          - "🇩🇪 Ramtin - Trojan : 2086-1"
+
+    - name: "🖐 Manual"
+      type: select
+      proxies:
+          - "🇩🇪 Ramtin - VLESS : 443"
+          - "🇩🇪 Ramtin - Trojan : 443"
+          - "🇩🇪 Ramtin - VLESS : 443-1"
+          - "🇩🇪 Ramtin - Trojan : 443-1"
+          - "🇩🇪 Ramtin - VLESS : 2053"
+          - "🇩🇪 Ramtin - Trojan : 2053"
+          - "🇩🇪 Ramtin - VLESS : 2053-1"
+          - "🇩🇪 Ramtin - Trojan : 2053-1"
+          - "🇩🇪 Ramtin - VLESS : 2086"
+          - "🇩🇪 Ramtin - Trojan : 2086"
+          - "🇩🇪 Ramtin - VLESS : 2086-1"
+          - "🇩🇪 Ramtin - Trojan : 2086-1"
+
+    - name: "🇩🇪 Germany"
+      type: url-test
+      url: "https://www.gstatic.com/generate_204"
+      interval: 30
+      tolerance: 50
+      proxies:
+          - "🇩🇪 Ramtin - VLESS : 443"
+          - "🇩🇪 Ramtin - Trojan : 443"
+          - "🇩🇪 Ramtin - VLESS : 443-1"
+          - "🇩🇪 Ramtin - Trojan : 443-1"
+          - "🇩🇪 Ramtin - VLESS : 2053"
+          - "🇩🇪 Ramtin - Trojan : 2053"
+          - "🇩🇪 Ramtin - VLESS : 2053-1"
+          - "🇩🇪 Ramtin - Trojan : 2053-1"
+          - "🇩🇪 Ramtin - VLESS : 2086"
+          - "🇩🇪 Ramtin - Trojan : 2086"
+          - "🇩🇪 Ramtin - VLESS : 2086-1"
+          - "🇩🇪 Ramtin - Trojan : 2086-1"
+
+rules:
+    - DOMAIN-SUFFIX,ir,DIRECT
+    - DOMAIN-KEYWORD,gov.ir,DIRECT
+    - DOMAIN-SUFFIX,fa,DIRECT
+    - GEOIP,IR,DIRECT
+    - MATCH,✅ Selector
