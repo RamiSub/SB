@@ -66,200 +66,585 @@ proxies:
       type: trojan
       server: 127.0.0.1
       port: 80
-      password: "726d746e-0000-4000-8000-000000000000"
+      password: "72616d74-0000-4000-8000-696e00000000"
       udp: true
       tls: false
-    - name: "🇩🇪 Ramtin - VLESS : 443"
+    - name: "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 443"
       type: vless
-      server: ramtinrhv.ramtinglx.workers.dev
+      server: ramtinglx.ramtinglx.workers.dev
       port: 443
-      uuid: 77b825bf-15be-6456-8a13-566500000000
+      uuid: d10ecdd2-c63e-4f83-f2ef-606600000000
       udp: true
       tls: true
-      servername: ramtinrhv.ramtinglx.workers.dev
+      servername: ramtinglx.ramtinglx.workers.dev
       client-fingerprint: chrome
       network: ws
       ws-opts:
-          path: "/eyJqdW5rIjoialhmZDU0S1JVUE8iLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          path: "/eyJqdW5rIjoiTGlpMnA2NHNGVFIiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
           headers:
-              Host: ramtinrhv.ramtinglx.workers.dev
+              Host: ramtinglx.ramtinglx.workers.dev
       skip-cert-verify: false
-
-    - name: "🇩🇪 Ramtin - Trojan : 443"
+      tfo: true
+    - name: "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 443"
       type: trojan
-      server: ramtinrhv.ramtinglx.workers.dev
+      server: ramtinglx.ramtinglx.workers.dev
       port: 443
-      password: "77b825bf-15be-6456-8a13-566558042ecd"
+      password: "d10ecdd2-c63e-4f83-f2ef-6066f4c06815"
       udp: true
       tls: true
-      sni: ramtinrhv.ramtinglx.workers.dev
+      sni: ramtinglx.ramtinglx.workers.dev
       client-fingerprint: chrome
       network: ws
       ws-opts:
-          path: "/eyJqdW5rIjoiOWEwaWN6WE10am8iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjowfQ=="
+          path: "/eyJqdW5rIjoiZkhZZWNaTVJTZ24iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjowfQ=="
           headers:
-              Host: ramtinrhv.ramtinglx.workers.dev
+              Host: ramtinglx.ramtinglx.workers.dev
       skip-cert-verify: false
-
-    - name: "🇩🇪 Ramtin - VLESS : 443-1"
+      tfo: true
+    - name: "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 443-1"
       type: vless
-      server: ramtinrhv.ramtinglx.workers.dev
+      server: ramtinglx.ramtinglx.workers.dev
       port: 443
-      uuid: 77b825bf-15be-6456-8a13-566500000001
+      uuid: d10ecdd2-c63e-4f83-f2ef-606600000001
       udp: true
       tls: true
-      servername: ramtinrhv.ramtinglx.workers.dev
+      servername: ramtinglx.ramtinglx.workers.dev
       client-fingerprint: chrome
       network: ws
       ws-opts:
-          path: "/eyJqdW5rIjoiUUVZRW52VWVOMVEiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          path: "/eyJqdW5rIjoicXBiY3RkYUFhMUUiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
           headers:
-              Host: ramtinrhv.ramtinglx.workers.dev
+              Host: ramtinglx.ramtinglx.workers.dev
       skip-cert-verify: false
-
-    - name: "🇩🇪 Ramtin - Trojan : 443-1"
+      tfo: true
+    - name: "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 443-1"
       type: trojan
-      server: ramtinrhv.ramtinglx.workers.dev
+      server: ramtinglx.ramtinglx.workers.dev
       port: 443
-      password: "77b825bf-15be-6456-8a13-566558042ecd"
+      password: "d10ecdd2-c63e-4f83-f2ef-6066f4c06815"
       udp: true
       tls: true
-      sni: ramtinrhv.ramtinglx.workers.dev
+      sni: ramtinglx.ramtinglx.workers.dev
       client-fingerprint: chrome
       network: ws
       ws-opts:
-          path: "/eyJqdW5rIjoiSEQ5aFNKMjFqd0IiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoxfQ=="
+          path: "/eyJqdW5rIjoiSmZJYlhxclpBc3oiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoxfQ=="
           headers:
-              Host: ramtinrhv.ramtinglx.workers.dev
+              Host: ramtinglx.ramtinglx.workers.dev
       skip-cert-verify: false
-
-    - name: "🇩🇪 Ramtin - VLESS : 2053"
+      tfo: true
+    - name: "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2053"
       type: vless
-      server: ramtinrhv.ramtinglx.workers.dev
+      server: ramtinglx.ramtinglx.workers.dev
       port: 2053
-      uuid: 77b825bf-15be-6456-8a13-566500000002
+      uuid: d10ecdd2-c63e-4f83-f2ef-606600000002
       udp: true
       tls: true
-      servername: ramtinrhv.ramtinglx.workers.dev
+      servername: ramtinglx.ramtinglx.workers.dev
       client-fingerprint: chrome
       network: ws
       ws-opts:
-          path: "/eyJqdW5rIjoiUjVaMWVRQklFUWIiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          path: "/eyJqdW5rIjoiTFRHck5XNFAyUjQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
           headers:
-              Host: ramtinrhv.ramtinglx.workers.dev
+              Host: ramtinglx.ramtinglx.workers.dev
       skip-cert-verify: false
-
-    - name: "🇩🇪 Ramtin - Trojan : 2053"
+      tfo: true
+    - name: "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2053"
       type: trojan
-      server: ramtinrhv.ramtinglx.workers.dev
+      server: ramtinglx.ramtinglx.workers.dev
       port: 2053
-      password: "77b825bf-15be-6456-8a13-566558042ecd"
+      password: "d10ecdd2-c63e-4f83-f2ef-6066f4c06815"
       udp: true
       tls: true
-      sni: ramtinrhv.ramtinglx.workers.dev
+      sni: ramtinglx.ramtinglx.workers.dev
       client-fingerprint: chrome
       network: ws
       ws-opts:
-          path: "/eyJqdW5rIjoiVW05V3o4ZGxZc0IiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoyfQ=="
+          path: "/eyJqdW5rIjoiaXBpMXFQeklXR0oiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoyfQ=="
           headers:
-              Host: ramtinrhv.ramtinglx.workers.dev
+              Host: ramtinglx.ramtinglx.workers.dev
       skip-cert-verify: false
-
-    - name: "🇩🇪 Ramtin - VLESS : 2053-1"
+      tfo: true
+    - name: "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2053-1"
       type: vless
-      server: ramtinrhv.ramtinglx.workers.dev
+      server: ramtinglx.ramtinglx.workers.dev
       port: 2053
-      uuid: 77b825bf-15be-6456-8a13-566500000003
+      uuid: d10ecdd2-c63e-4f83-f2ef-606600000003
       udp: true
       tls: true
-      servername: ramtinrhv.ramtinglx.workers.dev
+      servername: ramtinglx.ramtinglx.workers.dev
       client-fingerprint: chrome
       network: ws
       ws-opts:
-          path: "/eyJqdW5rIjoiVkVNZUtnTXd3blAiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          path: "/eyJqdW5rIjoiQkhiYXVxNGZ4MjQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
           headers:
-              Host: ramtinrhv.ramtinglx.workers.dev
+              Host: ramtinglx.ramtinglx.workers.dev
       skip-cert-verify: false
-
-    - name: "🇩🇪 Ramtin - Trojan : 2053-1"
+      tfo: true
+    - name: "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2053-1"
       type: trojan
-      server: ramtinrhv.ramtinglx.workers.dev
+      server: ramtinglx.ramtinglx.workers.dev
       port: 2053
-      password: "77b825bf-15be-6456-8a13-566558042ecd"
+      password: "d10ecdd2-c63e-4f83-f2ef-6066f4c06815"
       udp: true
       tls: true
-      sni: ramtinrhv.ramtinglx.workers.dev
+      sni: ramtinglx.ramtinglx.workers.dev
       client-fingerprint: chrome
       network: ws
       ws-opts:
-          path: "/eyJqdW5rIjoiNUUzRWF3Q3F6a2YiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjozfQ=="
+          path: "/eyJqdW5rIjoiQjNCS3lZZGxocEciLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjozfQ=="
           headers:
-              Host: ramtinrhv.ramtinglx.workers.dev
+              Host: ramtinglx.ramtinglx.workers.dev
       skip-cert-verify: false
-
-    - name: "🇩🇪 Ramtin - VLESS : 2086"
+      tfo: true
+    - name: "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2083"
       type: vless
-      server: ramtinrhv.ramtinglx.workers.dev
-      port: 2086
-      uuid: 77b825bf-15be-6456-8a13-566500000004
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2083
+      uuid: d10ecdd2-c63e-4f83-f2ef-606600000004
+      udp: true
+      tls: true
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoibUZta09McnlSOFMiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2083"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2083
+      password: "d10ecdd2-c63e-4f83-f2ef-6066f4c06815"
+      udp: true
+      tls: true
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoia09rd1lBM0VmOFYiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4Ijo0fQ=="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2083-1"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2083
+      uuid: d10ecdd2-c63e-4f83-f2ef-606600000005
+      udp: true
+      tls: true
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiT21PdklHWlBadHkiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2083-1"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2083
+      password: "d10ecdd2-c63e-4f83-f2ef-6066f4c06815"
+      udp: true
+      tls: true
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiZGt3a2k2QTlIT2IiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4Ijo1fQ=="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2087"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2087
+      uuid: d10ecdd2-c63e-4f83-f2ef-606600000006
+      udp: true
+      tls: true
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoicUsxNTN5aDFWNUIiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2087"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2087
+      password: "d10ecdd2-c63e-4f83-f2ef-6066f4c06815"
+      udp: true
+      tls: true
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoidXQyUDhreXcwcE4iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4Ijo2fQ=="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2087-1"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2087
+      uuid: d10ecdd2-c63e-4f83-f2ef-606600000007
+      udp: true
+      tls: true
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoia3VERFM0a3BySHIiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2087-1"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2087
+      password: "d10ecdd2-c63e-4f83-f2ef-6066f4c06815"
+      udp: true
+      tls: true
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoibkYyOGJxcmEwc1YiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4Ijo3fQ=="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2096"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2096
+      uuid: d10ecdd2-c63e-4f83-f2ef-606600000008
+      udp: true
+      tls: true
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiczBWVTlXUE5JMVkiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2096"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2096
+      password: "d10ecdd2-c63e-4f83-f2ef-6066f4c06815"
+      udp: true
+      tls: true
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiMHVsUW92Q1JFTkMiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4Ijo4fQ=="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2096-1"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2096
+      uuid: d10ecdd2-c63e-4f83-f2ef-606600000009
+      udp: true
+      tls: true
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiR1JxcU5VVGFFUGwiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2096-1"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2096
+      password: "d10ecdd2-c63e-4f83-f2ef-6066f4c06815"
+      udp: true
+      tls: true
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoidFYxZVVhemZBbGwiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4Ijo5fQ=="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 8443"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 8443
+      uuid: d10ecdd2-c63e-4f83-f2ef-60660000000a
+      udp: true
+      tls: true
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiZjVzSDJyZmRQOE8iLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 8443"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 8443
+      password: "d10ecdd2-c63e-4f83-f2ef-6066f4c06815"
+      udp: true
+      tls: true
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoicEJLWk1jeEtrRTIiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoxMH0="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 8443-1"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 8443
+      uuid: d10ecdd2-c63e-4f83-f2ef-60660000000b
+      udp: true
+      tls: true
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoicW1tb3ZONThCY1IiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 8443-1"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 8443
+      password: "d10ecdd2-c63e-4f83-f2ef-6066f4c06815"
+      udp: true
+      tls: true
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiZjhBWkFGQzJrbmMiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoxMX0="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 8080"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 8080
+      uuid: d10ecdd2-c63e-4f83-f2ef-60660000000c
       udp: true
       tls: false
-      servername: ramtinrhv.ramtinglx.workers.dev
+      servername: ramtinglx.ramtinglx.workers.dev
       client-fingerprint: chrome
       network: ws
       ws-opts:
-          path: "/eyJqdW5rIjoieXlNS2FVSm1qSHciLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          path: "/eyJqdW5rIjoia21xUldlYklzeTkiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
           headers:
-              Host: ramtinrhv.ramtinglx.workers.dev
+              Host: ramtinglx.ramtinglx.workers.dev
       skip-cert-verify: false
-
-    - name: "🇩🇪 Ramtin - Trojan : 2086"
+      tfo: true
+    - name: "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 8080"
       type: trojan
-      server: ramtinrhv.ramtinglx.workers.dev
-      port: 2086
-      password: "77b825bf-15be-6456-8a13-566558042ecd"
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 8080
+      password: "d10ecdd2-c63e-4f83-f2ef-6066f4c06815"
       udp: true
       tls: false
-      sni: ramtinrhv.ramtinglx.workers.dev
+      sni: ramtinglx.ramtinglx.workers.dev
       client-fingerprint: chrome
       network: ws
       ws-opts:
-          path: "/eyJqdW5rIjoiVk1qNkN5OEd3YVoiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4Ijo0fQ=="
+          path: "/eyJqdW5rIjoiTnNRbVVUQkZmazUiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoxMn0="
           headers:
-              Host: ramtinrhv.ramtinglx.workers.dev
+              Host: ramtinglx.ramtinglx.workers.dev
       skip-cert-verify: false
-
-    - name: "🇩🇪 Ramtin - VLESS : 2086-1"
+      tfo: true
+    - name: "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 8080-1"
       type: vless
-      server: ramtinrhv.ramtinglx.workers.dev
-      port: 2086
-      uuid: 77b825bf-15be-6456-8a13-566500000005
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 8080
+      uuid: d10ecdd2-c63e-4f83-f2ef-60660000000d
       udp: true
       tls: false
-      servername: ramtinrhv.ramtinglx.workers.dev
+      servername: ramtinglx.ramtinglx.workers.dev
       client-fingerprint: chrome
       network: ws
       ws-opts:
-          path: "/eyJqdW5rIjoiM25YeG5mbU5kYUciLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          path: "/eyJqdW5rIjoiZmZXOThKa2pzQmwiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
           headers:
-              Host: ramtinrhv.ramtinglx.workers.dev
+              Host: ramtinglx.ramtinglx.workers.dev
       skip-cert-verify: false
-
-    - name: "🇩🇪 Ramtin - Trojan : 2086-1"
+      tfo: true
+    - name: "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 8080-1"
       type: trojan
-      server: ramtinrhv.ramtinglx.workers.dev
-      port: 2086
-      password: "77b825bf-15be-6456-8a13-566558042ecd"
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 8080
+      password: "d10ecdd2-c63e-4f83-f2ef-6066f4c06815"
       udp: true
       tls: false
-      sni: ramtinrhv.ramtinglx.workers.dev
+      sni: ramtinglx.ramtinglx.workers.dev
       client-fingerprint: chrome
       network: ws
       ws-opts:
-          path: "/eyJqdW5rIjoibGVqV2RUVzlocW4iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4Ijo1fQ=="
+          path: "/eyJqdW5rIjoiQ041WlhTczVma0siLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoxM30="
           headers:
-              Host: ramtinrhv.ramtinglx.workers.dev
+              Host: ramtinglx.ramtinglx.workers.dev
       skip-cert-verify: false
+      tfo: true
+    - name: "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2086"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2086
+      uuid: d10ecdd2-c63e-4f83-f2ef-60660000000e
+      udp: true
+      tls: false
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiZGN0N29YaGZtTmwiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2086"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2086
+      password: "d10ecdd2-c63e-4f83-f2ef-6066f4c06815"
+      udp: true
+      tls: false
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiNndod2x1TUNwNTEiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoxNH0="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2086-1"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2086
+      uuid: d10ecdd2-c63e-4f83-f2ef-60660000000f
+      udp: true
+      tls: false
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiUVI2TUVHdmhqSEkiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2086-1"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2086
+      password: "d10ecdd2-c63e-4f83-f2ef-6066f4c06815"
+      udp: true
+      tls: false
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiaTVxSUJGeEV5Qm0iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoxNX0="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2095"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2095
+      uuid: d10ecdd2-c63e-4f83-f2ef-606600000010
+      udp: true
+      tls: false
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiUXd4OHdRZDdIS3kiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2095"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2095
+      password: "d10ecdd2-c63e-4f83-f2ef-6066f4c06815"
+      udp: true
+      tls: false
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiaDd4RmJReW5FbmciLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoxNn0="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2095-1"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2095
+      uuid: d10ecdd2-c63e-4f83-f2ef-606600000011
+      udp: true
+      tls: false
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiN1Q4em85Ym13dXgiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2095-1"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2095
+      password: "d10ecdd2-c63e-4f83-f2ef-6066f4c06815"
+      udp: true
+      tls: false
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiYTBPcWhjVlJQelUiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoxN30="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
 
 proxy-groups:
     - name: "✅ Selector"
@@ -275,34 +660,82 @@ proxy-groups:
       interval: 30
       tolerance: 50
       proxies:
-          - "🇩🇪 Ramtin - VLESS : 443"
-          - "🇩🇪 Ramtin - Trojan : 443"
-          - "🇩🇪 Ramtin - VLESS : 443-1"
-          - "🇩🇪 Ramtin - Trojan : 443-1"
-          - "🇩🇪 Ramtin - VLESS : 2053"
-          - "🇩🇪 Ramtin - Trojan : 2053"
-          - "🇩🇪 Ramtin - VLESS : 2053-1"
-          - "🇩🇪 Ramtin - Trojan : 2053-1"
-          - "🇩🇪 Ramtin - VLESS : 2086"
-          - "🇩🇪 Ramtin - Trojan : 2086"
-          - "🇩🇪 Ramtin - VLESS : 2086-1"
-          - "🇩🇪 Ramtin - Trojan : 2086-1"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 443"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 443"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 443-1"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 443-1"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2053"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2053"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2053-1"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2053-1"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2083"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2083"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2083-1"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2083-1"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2087"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2087"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2087-1"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2087-1"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2096"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2096"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2096-1"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2096-1"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 8443"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 8443"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 8443-1"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 8443-1"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 8080"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 8080"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 8080-1"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 8080-1"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2086"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2086"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2086-1"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2086-1"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2095"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2095"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2095-1"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2095-1"
 
     - name: "🖐 Manual"
       type: select
       proxies:
-          - "🇩🇪 Ramtin - VLESS : 443"
-          - "🇩🇪 Ramtin - Trojan : 443"
-          - "🇩🇪 Ramtin - VLESS : 443-1"
-          - "🇩🇪 Ramtin - Trojan : 443-1"
-          - "🇩🇪 Ramtin - VLESS : 2053"
-          - "🇩🇪 Ramtin - Trojan : 2053"
-          - "🇩🇪 Ramtin - VLESS : 2053-1"
-          - "🇩🇪 Ramtin - Trojan : 2053-1"
-          - "🇩🇪 Ramtin - VLESS : 2086"
-          - "🇩🇪 Ramtin - Trojan : 2086"
-          - "🇩🇪 Ramtin - VLESS : 2086-1"
-          - "🇩🇪 Ramtin - Trojan : 2086-1"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 443"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 443"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 443-1"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 443-1"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2053"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2053"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2053-1"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2053-1"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2083"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2083"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2083-1"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2083-1"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2087"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2087"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2087-1"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2087-1"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2096"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2096"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2096-1"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2096-1"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 8443"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 8443"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 8443-1"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 8443-1"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 8080"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 8080"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 8080-1"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 8080-1"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2086"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2086"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2086-1"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2086-1"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2095"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2095"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2095-1"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2095-1"
 
     - name: "🇩🇪 Germany"
       type: url-test
@@ -310,18 +743,42 @@ proxy-groups:
       interval: 30
       tolerance: 50
       proxies:
-          - "🇩🇪 Ramtin - VLESS : 443"
-          - "🇩🇪 Ramtin - Trojan : 443"
-          - "🇩🇪 Ramtin - VLESS : 443-1"
-          - "🇩🇪 Ramtin - Trojan : 443-1"
-          - "🇩🇪 Ramtin - VLESS : 2053"
-          - "🇩🇪 Ramtin - Trojan : 2053"
-          - "🇩🇪 Ramtin - VLESS : 2053-1"
-          - "🇩🇪 Ramtin - Trojan : 2053-1"
-          - "🇩🇪 Ramtin - VLESS : 2086"
-          - "🇩🇪 Ramtin - Trojan : 2086"
-          - "🇩🇪 Ramtin - VLESS : 2086-1"
-          - "🇩🇪 Ramtin - Trojan : 2086-1"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 443"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 443"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 443-1"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 443-1"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2053"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2053"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2053-1"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2053-1"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2083"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2083"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2083-1"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2083-1"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2087"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2087"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2087-1"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2087-1"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2096"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2096"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2096-1"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2096-1"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 8443"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 8443"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 8443-1"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 8443-1"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 8080"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 8080"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 8080-1"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 8080-1"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2086"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2086"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2086-1"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2086-1"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2095"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2095"
+          - "🇩🇪 GLX - VLESS (ramtinglx.ramtinglx.workers.dev) : 2095-1"
+          - "🇩🇪 GLX - Trojan (ramtinglx.ramtinglx.workers.dev) : 2095-1"
 
 rules:
     - DOMAIN-SUFFIX,ir,DIRECT
